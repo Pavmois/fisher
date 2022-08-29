@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h1>This is an Homeland page</h1>
+  <div class="home">
 
       <div class="left__text">
         А вот и я!
@@ -13,15 +12,30 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  methods:{
+    click: function() {
+      alert(11);
+    }
+  }
+}
+</script>
+
 <style scoped>
-  div {
-    background: firebrick;
+  .home {
+    background-color: aqua;
+    background-image: url('/src/assets/1.jpg');
+    background-repeat: no-repeat;
   }
   .left__text {
-    margin-top: 10%;
-    margin-left: 20px;
+    border: 1px solid red;
+    width: auto;
+    height: 300px;
   }
   .right__text {
-    margin-right: 20px;
+    border: 1px solid red;
+    height: 600px;
   }
 </style>

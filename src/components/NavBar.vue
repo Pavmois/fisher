@@ -31,7 +31,12 @@ export default {
 }
 
 nav {
-  padding: 10px;
+  position: fixed;
+  padding: 20px;
+  background-color: #9a80c4;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
