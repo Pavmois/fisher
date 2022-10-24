@@ -11,6 +11,12 @@
   </div>
 </template>
 
+<script>
+export default {
+
+}
+</script>
+
 <style lang="scss" scoped>
   .gallery__wrapper {
     background: firebrick;

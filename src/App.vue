@@ -1,28 +1,27 @@
 <template>
-  <NavBar v-if="is_navbar" />
+    <div>
+      <NavBar/>
+      <router-view/>
+    </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
 
 export default {
-  data(){
-    return {
-      is_navbar: true
-    }
-  },
+  name: 'App',
   components: {
     NavBar
   },
   created(){
-    //window.addEventListener('scroll', this.hideMenu);
+    window.addEventListener('scroll', this.hideMenu);
   },
   methods:{
     hideMenu() {
-      this.is_navbar = false
+      //alert(11);
     },
     click: function() {
-      alert(11);
+      //alert(11);
     }
   }
 }
