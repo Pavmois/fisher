@@ -14,7 +14,7 @@ export default {
     NavBar
   },
   created(){
-    window.addEventListener('scroll', this.hideMenu);
+    //window.addEventListener('scroll', this.hideMenu);
   },
   methods:{
     hideMenu() {
