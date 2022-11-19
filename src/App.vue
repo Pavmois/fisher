@@ -31,5 +31,7 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    background-color: #3f3c3c;
+    /* background-image: url('/src/assets/2.jpg'); */
   }
 </style>

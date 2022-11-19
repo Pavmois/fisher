@@ -12,6 +12,10 @@ const routes = [
   {
     path: '/gallery',
     component: () => import('../pages/Gallery.vue')
+  },
+  {
+    path: '/donate',
+    component: () => import('../pages/Donate.vue')
   }
 ]
 

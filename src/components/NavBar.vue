@@ -3,8 +3,8 @@
     <nav>
       <router-link to="/">Главная</router-link> |
       <router-link to="/gallery">Галерея</router-link> |
-      <!-- <router-link to="">Новости</router-link> |
-      <router-link to="">Ссылки</router-link> |
+      <router-link to="/donate">Donate</router-link> |
+      <!-- <router-link to="">Ссылки</router-link> |
       <router-link to="">Образы</router-link> -->
     </nav>
   </div>
@@ -23,21 +23,27 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #9a80c4;
+  background-color: #000000;
   width: 100vw;
   display: flex;
   justify-content: center;
 
     a {
+      color: #fff;
       font-weight: bold;
-      color: #2c3e50;
+      transition: all 0.4s linear;
+      text-decoration: none;
     }
 
     a.router-link-exact-active {
-      color: #42b983;
+      color: #b80707;
+    }
+
+    a:hover {
+      color: #b80707;
     }
 }
 </style>
