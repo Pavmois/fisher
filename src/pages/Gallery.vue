@@ -1,6 +1,6 @@
 <template>
   <div class="gallery__wrapper">
-    <h1>This is an Gallery page</h1>
+    <h1>This is an Donate page</h1>
     <div class="left__text">
       А вот и я!
     </div>
