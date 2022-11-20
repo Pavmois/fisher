@@ -26,7 +26,6 @@ export default {
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #000000;
   width: 100vw;
   display: flex;
   justify-content: center;

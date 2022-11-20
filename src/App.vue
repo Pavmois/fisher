@@ -31,7 +31,10 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background-color: #3f3c3c;
-    /* background-image: url('/src/assets/2.jpg'); */
+    background-image: url('/src/assets/background.jpg');
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
   }
 </style>
