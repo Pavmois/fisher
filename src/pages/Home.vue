@@ -5,37 +5,37 @@
       <div class="quote__text">
         <span>Я всегда поддерживаю своих модераторов!
           <br>Хожу к ним на концерты</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
+        <video class="video" src="@/assets/video/osc.mp4" controls></video> 
       </div>
 
       <div class="quote__text right">
+        <span>Выпил кошку</span>
+        <video class="video" src="@/assets/video/кошка.mp4" controls></video>
+      </div>
+
+      <div class="quote__text">
+        <span>Я сам играю на гитаре</span>
+        <video class="video" src="@/assets/video/1.mp4" controls></video> 
+      </div>
+
+      <div class="quote__text right">
+        <span>Волки!</span>
+        <video class="video" src="@/assets/video/волки.mp4" controls></video> 
+      </div>
+
+      <div class="quote__text">
         <span>В мою честь пишут песни!</span>
-        <iframe src="https://www.youtube.com/embed/Kton7VFz2po" title="Стримеру заплатите" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-
-      <div class="quote__text">
-        <span>Привет! Это - мой сайт. Добро пожаловать, путник</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
+        <video class="video" src="@/assets/video/космея.mp4" controls></video>
       </div>
 
       <div class="quote__text right">
         <span>Привет! Это - мой сайт. Добро пожаловать, путник</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
+        <video class="video" src="@/assets/video/osc.mp4" controls></video> 
       </div>
 
       <div class="quote__text">
         <span>Привет! Это - мой сайт. Добро пожаловать, путник</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
-      </div>
-
-      <div class="quote__text right">
-        <span>Привет! Это - мой сайт. Добро пожаловать, путник</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
-      </div>
-
-      <div class="quote__text">
-        <span>Привет! Это - мой сайт. Добро пожаловать, путник</span>
-        <video class="video" src="@/assets/Мы идём.mp4" controls></video> 
+        <video class="video" src="@/assets/video/osc.mp4" controls></video> 
       </div>
 
 
@@ -139,15 +139,10 @@ export default {
 
       .video {
         width: 310px;
-        margin-left: 50px;
+        height: 250px;
         margin-top: 10px;
-        border-radius: 15px;
+
         transition: all 0.4s linear;
-          &:hover {
-            transform: scale(1.5);
-            margin-left: 100px;
-            margin-top: 50px;
-          }
       }
 
       .quote__text {
@@ -156,19 +151,6 @@ export default {
         flex-direction: column;
         //border: 1px solid rgb(255, 0, 200);
         margin-top: 50px;
-
-        iframe {
-        width: 310px;
-        height: 172px;
-        margin-top: 10px;
-        border-radius: 15px;
-        transition: all 0.4s linear;
-          &:hover {
-            transform: scale(1.5);
-            margin-right: 50px;
-            margin-top: 50px;
-          }
-        }
 
         span {
           background: #fff;
