@@ -1,31 +1,101 @@
 <template>
-  <div class="gallery__wrapper">
-    <h1>This is an Gallery page</h1>
-    <div class="left__text">
-      А вот и я!
-    </div>
-
-    <div class="right__text">
-      Here i am!
-    </div>
-  </div>
+  <swiper
+    :direction="'vertical'"
+    :slidesPerView="1"
+    :spaceBetween="30"
+    :mousewheel="true"
+    :pagination="{
+      clickable: true,
+    }"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img
+        src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
+    ><swiper-slide
+      ><img src="https://swiperjs.com/demos/images/nature-9.jpg"
+    /></swiper-slide>
+  </swiper>
 </template>
-
 <script>
-export default {
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
 
-}
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/pagination";
+
+// import required modules
+import { Mousewheel, Pagination } from "swiper";
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Mousewheel, Pagination],
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .gallery__wrapper {
-    background: firebrick;
 
-    h1 {
-      margin: 0;
-      border: 10px solid aqua;
-      z-index: 100;
-      opacity: 1;
-    }
-  }
+.swiper {
+  width: 1600px;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 </style>
