@@ -3,7 +3,7 @@
     <nav>
       <router-link to="/">Главная</router-link> |
       <router-link to="/gallery">Галерея</router-link> |
-      <router-link to="/donate">Donate</router-link> |
+      <router-link to="/donate">Поддержка</router-link> |
       <!-- <router-link to="">Ссылки</router-link> |
       <router-link to="">Образы</router-link> -->
     </nav>
