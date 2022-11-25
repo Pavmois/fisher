@@ -6,7 +6,10 @@
       </a>
     </div>
     <div class="donate__sounds">
-      <div class="donate__sounds-description"></div>
+      <div class="donate__sounds-description">
+        А чтобы донатить было не так скушно, на некоторые суммы есть особенные эффекты,
+        созданные и записанные мною лично. И да, как честный стример предлагаю заранее узнать, за что ты платишь:
+      </div>
       <div class="donate__sounds-example">
 
         <!-- Блок звуков за рубли -->

@@ -1,5 +1,24 @@
 <template>
-  <swiper
+  <swiper v-if="isMobile"
+    :zoom="true"
+    :navigation="true"
+    :pagination="{
+      clickable: true,
+    }"
+    :modules="modules"
+    class="mySwiper"
+  >
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/1.jpg" /></div></swiper-slide>
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/3.jpg" /></div></swiper-slide>
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/4.jpg" /></div></swiper-slide>
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/5.jpg" /></div></swiper-slide>
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/6.jpg" /></div></swiper-slide>
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/7.jpg" /></div></swiper-slide>
+
+    
+  </swiper>
+
+  <swiper v-else
     :direction="'vertical'"
     :slidesPerView="1"
     :spaceBetween="30"
@@ -18,6 +37,7 @@
     <swiper-slide><img src="~@/assets/gallery/7.jpg" /></swiper-slide>
     
   </swiper>
+
 </template>
 <script>
 // Import Swiper Vue.js components
@@ -26,20 +46,43 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 
+import "swiper/css/zoom";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Mousewheel, Pagination } from "swiper";
+import { Mousewheel, Zoom, Navigation, Pagination } from "swiper";
 
 export default {
+  data: () => ({
+    width: 0,
+    isMobile: false
+  }),
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
     return {
-      modules: [Mousewheel, Pagination],
+      modules: [Mousewheel, Zoom, Navigation, Pagination],
     };
+  },
+  methods: {
+    updateWidth() {
+      this.width = window.innerWidth;
+      if (this.width <= 768) {
+        this.isMobile = true
+      } else this.isMobile = false
+    },
+  },
+  created() {
+    this.width = window.innerWidth;
+
+    if (this.width <= 768) {
+      this.isMobile = true
+    } else this.isMobile = false
+
+    window.addEventListener('resize', this.updateWidth);
   },
 };
 </script>
@@ -57,6 +100,13 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+
+  @media (max-width: 767px) {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+  }
 }
 
 .swiper-slide {
