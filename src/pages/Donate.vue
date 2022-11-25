@@ -96,7 +96,7 @@ export default {
       }
 
       .button:hover, .button:focus {
-        color: #313133;
+        color: hotpink;
         transform: translateY(-6px);
       }
 

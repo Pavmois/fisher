@@ -10,33 +10,13 @@
     :modules="modules"
     class="mySwiper"
   >
-    <swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img
-        src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
-    ><swiper-slide
-      ><img src="https://swiperjs.com/demos/images/nature-9.jpg"
-    /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/1.jpg" /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/3.jpg" /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/4.jpg" /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/5.jpg" /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/6.jpg" /></swiper-slide>
+    <swiper-slide><img src="~@/assets/gallery/7.jpg" /></swiper-slide>
+    
   </swiper>
 </template>
 <script>
@@ -66,9 +46,17 @@ export default {
 
 <style lang="scss" scoped>
 
+.nav_bar {
+  border: 1px solid red;
+}
+
 .swiper {
-  width: 1600px;
-  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 .swiper-slide {
