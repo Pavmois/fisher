@@ -7,28 +7,82 @@
     </div>
     <div class="donate__sounds">
       <div class="donate__sounds-description">
-        А чтобы донатить было не так скушно, на некоторые суммы есть особенные эффекты,
-        созданные и записанные мною лично. И да, как честный стример предлагаю заранее узнать, за что ты платишь:
+        Чудесная кнопка сверху поможет тебе выразить свои чувства к стримеру в любом виде - в рублях, долларах, евро...<br>
+        <br>
+        А чтобы донатить было не так скучно, на некоторые суммы есть особенные эффекты, созданные и записанные мною лично. И да, как честный стример предлагаю заранее узнать, за что ты платишь:
       </div>
       <div class="donate__sounds-example">
 
         <!-- Блок звуков за рубли -->
-        <div class="example__rubles">
-          <div class="example__rubles-desc"></div>
-          <div class="example__rubles-item">
-            <div class="item-text"></div>
-            <div class="item-play"></div>
+        <div class="example">
+          <div class="example-desc">Оповещения за рубли</div>
+
+          <div class="example-item">
+            <div class="item-text">501 рубль - тема из Готики</div>
+            <div v-if="!isPlaying" class="item-play" @click.prevent="playSound('./morty.mp3'); isPlaying ? pause() : play()">&#9658;</div>
+            <div v-else class="item-play" @click.prevent="pause()">&#8986;</div>
           </div>
+
+          <div class="example-item">
+            <div class="item-text">666 рублей - тема из Обливиона</div>
+            <div v-if="!isPlaying" class="item-play" @click.prevent="playSound('./morty.mp3'); isPlaying ? pause() : play()">&#9658;</div>
+            <div v-else class="item-play" @click.prevent="pause()">&#8986;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">1000 рублей - Особое оповещение </div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">5000 рублей - уникальный скример</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">10000 рублей - Рик и Морти от Давида</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">10000 рублей - Рик и Морти от Давида</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+          
+
         </div>
 
         <!-- Блок звуков за баллы канала (фишки) -->
-        <div class="example__fishkes">
-          <div class="example__rubles-desc"></div>
-          <div class="example__rubles-item">
-            <div class="item-text"></div>
-            <div class="item-play"></div>
+        <div class="example">
+          <div class="example-desc">Оповещения за баллы канала</div>
+
+          <div class="example-item">
+            <div class="item-text">За Гомеза!</div>
+            <div class="item-play">&#9658;</div>
           </div>
+
+          <div class="example-item">
+            <div class="item-text">Ещё одна!</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">Покорми стримера</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">Бахнуть со стримером</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
+          <div class="example-item">
+            <div class="item-text">Тост</div>
+            <div class="item-play">&#9658;</div>
+          </div>
+
         </div>
+
       </div>
     </div>
   </div>
@@ -36,7 +90,29 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      isPlaying: false,
+      audio: null
+    }
+  },
+  methods: {
+    playSound (sound) {
+        this.audio = new Audio(sound);
+    },
+    play () {
+      console.log(111)
+      this.audio.pause()
+      this.audio.play()
+      this.isPlaying = true
+    },
+    
+    pause () {
+      console.log(222)
+      this.audio.pause()
+      this.isPlaying = false
+    }
+}
 }
 </script>
 
@@ -45,13 +121,13 @@ export default {
     width: 90%;
     margin: auto;
     margin-top: 0px;
+    color: white;
 
     .donate__links {
       display: flex;
       text-align: center;
       justify-content: center;
       height: 300px;
-      
       border-bottom: none;
 
       .wrap {
@@ -71,11 +147,11 @@ export default {
         letter-spacing: 1.3px;
         font-weight: 700;
         color: white;
-        background: #4FD1C5;
-        background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+        background: #000000;
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(34, 34, 34) 100%);
         border: none;
         border-radius: 1000px;
-        box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+        box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
         transition: all 0.3s ease-in-out 0s;
         cursor: pointer;
         outline: none;
@@ -88,8 +164,8 @@ export default {
         border-radius: 1000px;
         min-width: calc(300px + 12px);
         min-height: calc(60px + 12px);
-        border: 6px solid #00FFCB;
-        box-shadow: 0 0 60px rgba(0,255,203,.64);
+        border: 6px solid rgba(255, 255, 255, 0.64);
+        box-shadow: 0 0 60px rgba(255, 255, 255, 0.64);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -99,7 +175,6 @@ export default {
       }
 
       .button:hover, .button:focus {
-        color: hotpink;
         transform: translateY(-6px);
       }
 
@@ -111,7 +186,7 @@ export default {
         content: '';
         width: 30px; height: 30px;
         border-radius: 100%;
-        border: 6px solid #00FFCB;
+        border: 6px solid white;
         position: absolute;
         z-index: -1;
         top: 50%;
@@ -143,10 +218,59 @@ export default {
 
     .donate__sounds {
       display: flex;
-      text-align: center;
-      justify-content: center;
-      height: 300px;
+      flex-direction: column;
       border: 1px solid antiquewhite;
+
+      .donate__sounds-description {
+        font-size: 18px;
+      }
+
+      .donate__sounds-example {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 25px;
+
+        .example {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid red;
+          width: 45%;
+
+          .example-desc {
+            text-align: center;
+          }
+          .example-item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 100%;
+            background: rgba(31, 46, 58, 0.65);
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            .item-text {
+              margin-left: 10px;
+              font-size: 18px;
+              line-height: 36px;
+            }
+            .item-play {
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              border-radius: 50%;
+              margin-right: 10px;
+              background: #b80707;
+              text-align: center;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+
+        }
+
+      }
     }
   }
 </style>
