@@ -127,7 +127,6 @@ export default {
     width: 100vw;
     height: 94vh;
     margin: auto;
-    //border: 1px solid greenyellow;
     overflow: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
