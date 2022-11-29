@@ -20,7 +20,7 @@
 
             <div class="example-item" v-for="donate in donates" :key="donate.id">
               <div class="item-text">{{ donate.name }}</div>
-              <div class="item-play" @click.prevent="donate.isPlaying ? pause(donate) : play(donate)">{{ donate.isPlaying ? '||' : '&#9658;' }}</div>
+              <div class="item-play" @click.prevent="donate.isPlaying ? pause(donate) : play(donate)">{{ donate.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
 
           </div>
@@ -31,7 +31,7 @@
 
             <div class="example-item" v-for="fish in fishpoints" :key="fish.id">
               <div class="item-text">{{ fish.name }}</div>
-              <div class="item-play" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">{{ fish.isPlaying ? '||' : '&#9658;' }}</div>
+              <div class="item-play" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">{{ fish.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
 
           </div>
