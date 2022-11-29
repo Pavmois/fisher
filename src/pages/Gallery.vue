@@ -8,6 +8,7 @@
     :modules="modules"
     class="mySwiper"
   >
+    <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/0.jpg" /></div></swiper-slide>
     <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/1.jpg" /></div></swiper-slide>
     <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/3.jpg" /></div></swiper-slide>
     <swiper-slide><div class="swiper-zoom-container"><img src="~@/assets/gallery/4.jpg" /></div></swiper-slide>
@@ -29,6 +30,7 @@
     :modules="modules"
     class="mySwiper"
   >
+    <swiper-slide><img src="~@/assets/gallery/0.jpg" /></swiper-slide>
     <swiper-slide><img src="~@/assets/gallery/1.jpg" /></swiper-slide>
     <swiper-slide><img src="~@/assets/gallery/3.jpg" /></swiper-slide>
     <swiper-slide><img src="~@/assets/gallery/4.jpg" /></swiper-slide>

@@ -16,6 +16,14 @@ const routes = [
   {
     path: '/donate',
     component: () => import('../pages/Donate.vue')
+  },
+  {
+    path: '/history',
+    component: () => import('../pages/History.vue')
+  },
+  {
+    path: '/clips',
+    component: () => import('../pages/Clips.vue')
   }
 ]
 
