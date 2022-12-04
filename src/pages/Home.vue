@@ -10,7 +10,8 @@
 
       <div class="quote__text right">
         <span>Выпил кошку</span>
-        <video class="video" src="@/assets/video/кошка.mp4" controls></video>
+        <!-- <video class="video" src="@/assets/video/кошка.mp4" controls></video> -->
+        <video class="video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
       </div>
 
       <div class="quote__text">
@@ -138,8 +139,9 @@ export default {
 
       .video {
         width: 310px;
-        height: 250px;
-        margin-top: 10px;
+        //height: 250px;
+        margin-top: 15px;
+        border-radius: 15px;
 
         transition: all 0.4s linear;
       }

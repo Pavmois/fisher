@@ -152,8 +152,8 @@ export default {
           isPlaying: false
         },
         {
-          id: 'tost',
-          name: 'Тост',
+          id: 'history',
+          name: 'История',
           file: new Audio('./audio/fishpoints/history.mp3'),
           isPlaying: false
         },
@@ -161,6 +161,24 @@ export default {
           id: 'vip',
           name: 'VIP-статус',
           file: new Audio('./audio/fishpoints/vip.mp3'),
+          isPlaying: false
+        },
+        {
+          id: 'drink',
+          name: 'Бахнуть со стримером',
+          file: new Audio('./audio/fishpoints/drink.mp3'),
+          isPlaying: false
+        },
+        {
+          id: 'pokormit',
+          name: 'Покормить стримера',
+          file: new Audio('./audio/fishpoints/pokormit.mp3'),
+          isPlaying: false
+        },
+        {
+          id: 'tost',
+          name: 'Тост',
+          file: new Audio('./audio/fishpoints/tost.mp3'),
           isPlaying: false
         }
       ]
