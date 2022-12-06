@@ -136,6 +136,102 @@ export default {
           name: 'God of war',
           year: '16 янв. 2022г.',
           path: require("../assets/history/35.jpg")
+        },
+        {
+          id: '37',
+          name: 'Sekiro',
+          year: '2 февр. 2022г.',
+          path: require("../assets/history/37.jpg")
+        },
+        {
+          id: '39',
+          name: 'SiFu',
+          year: '18 февр. 2022г.',
+          path: require("../assets/history/39.jpg")
+        },
+        {
+          id: '41',
+          name: 'Risen 2',
+          year: '7 мар. 2022г.',
+          path: require("../assets/history/41.jpg")
+        },
+        {
+          id: '43',
+          name: 'Elden Ring',
+          year: '18 мар. 2022г.',
+          path: require("../assets/history/43.jpg")
+        },
+        {
+          id: '45',
+          name: 'Elden Ring',
+          year: '14 апр. 2022г.',
+          path: require("../assets/history/45.jpg")
+        },
+        {
+          id: '47',
+          name: 'Mad Max',
+          year: '16 мая 2022г.',
+          path: require("../assets/history/47.jpg")
+        },
+        {
+          id: '49',
+          name: 'Phantom Abyss',
+          year: '20 мая 2022г.',
+          path: require("../assets/history/49.jpg")
+        },
+        {
+          id: '51',
+          name: 'Planet Crafter',
+          year: '10 июня 2022г.',
+          path: require("../assets/history/51.jpg")
+        },
+        {
+          id: '53',
+          name: 'Escape from Tarkov',
+          year: '19 июл. 2022г.',
+          path: require("../assets/history/53.jpg")
+        },
+        {
+          id: '55',
+          name: 'World Of Warcraft',
+          year: '16 авг. 2022г.',
+          path: require("../assets/history/55.jpg")
+        },
+        {
+          id: '57',
+          name: 'Spider-Man',
+          year: '30 авг. 2022г.',
+          path: require("../assets/history/57.jpg")
+        },
+        {
+          id: '59',
+          name: 'Path Of Exile',
+          year: '1 сент. 2022г.',
+          path: require("../assets/history/59.jpg")
+        },
+        {
+          id: '61',
+          name: 'World Of Warcraft',
+          year: '10 сент. 2022г.',
+          path: require("../assets/history/61.jpg")
+        },
+        {
+          id: '63',
+          name: 'Visage',
+          year: '24 сент. 2022г.',
+          path: require("../assets/history/63.jpg")
+        },
+        {
+          id: '65',
+          name: 'Dying Light',
+          year: '11 окт. 2022г.',
+          path: require("../assets/history/65.jpg")
+        },
+        {
+          id: '67',
+          name: 'Fallout 76',
+          year: '13 нояб. 2022г.',
+          path: require("../assets/history/67.jpg")
         }
       ],
       right: [
@@ -240,6 +336,102 @@ export default {
           name: '30 лет!',
           year: ' 26 дек. 2021г.',
           path: require("../assets/history/34.jpg")
+        },
+        {
+          id: '36',
+          name: 'Project Zomboid',
+          year: ' 30 янв. 2022г.',
+          path: require("../assets/history/36.jpg")
+        },
+        {
+          id: '38',
+          name: 'Dying Light 2',
+          year: '5 февр. 2022г.',
+          path: require("../assets/history/38.jpg")
+        },
+        {
+          id: '40',
+          name: 'Raft',
+          year: '5 мар. 2022г.',
+          path: require("../assets/history/40.jpg")
+        },
+        {
+          id: '42',
+          name: 'Elden Ring',
+          year: '17 мар. 2022г.',
+          path: require("../assets/history/42.jpg")
+        },
+        {
+          id: '44',
+          name: 'Elden Ring',
+          year: '20 мар. 2022г.',
+          path: require("../assets/history/44.jpg")
+        },
+        {
+          id: '46',
+          name: 'TES III: Morrowind',
+          year: '20 апр. 2022г.',
+          path: require("../assets/history/46.jpg")
+        },
+        {
+          id: '48',
+          name: 'King Arthur',
+          year: '18 мая 2022г.',
+          path: require("../assets/history/48.jpg")
+        },
+        {
+          id: '50',
+          name: 'V Rising',
+          year: '24 мая 2022г.',
+          path: require("../assets/history/50.jpg")
+        },
+        {
+          id: '52',
+          name: 'Hellblade',
+          year: '12 июня 2022г.',
+          path: require("../assets/history/52.jpg")
+        },
+        {
+          id: '54',
+          name: 'Fallout',
+          year: '24 июля 2022г.',
+          path: require("../assets/history/54.jpg")
+        },
+        {
+          id: '56',
+          name: 'World Of Warcraft',
+          year: '21 авг. 2022г.',
+          path: require("../assets/history/56.jpg")
+        },
+        {
+          id: '58',
+          name: 'World Of Warcraft',
+          year: '31 авг. 2022г.',
+          path: require("../assets/history/58.jpg")
+        },
+        {
+          id: '60',
+          name: 'Path Of Exile',
+          year: '8 сент. 2022г.',
+          path: require("../assets/history/60.jpg")
+        },
+        {
+          id: '62',
+          name: 'Dragons Dogma',
+          year: '22 сент. 2022г.',
+          path: require("../assets/history/62.jpg")
+        },
+        {
+          id: '64',
+          name: 'Scum',
+          year: '8 окт. 2022г.',
+          path: require("../assets/history/64.jpg")
+        },
+        {
+          id: '66',
+          name: 'Cooking Stream',
+          year: '12 окт. 2022г.',
+          path: require("../assets/history/66.jpg")
         }
       ]
     }
@@ -260,7 +452,7 @@ export default {
     .history-wrapper {
       display: flex;
       width: 50%;
-      height: 7000px;
+      height: 100%;
       border: 1px solid red;
       margin-right: 10%;
       .history__left,
