@@ -1,21 +1,32 @@
 <template>
   <div class="history">
     <div class="history-wrapper">
-      <div class="history__left">
-        <div class="history-item" v-for="item in left" :key="item.id">
-          <div class="item-desc">{{ item.name }}</div>
-          <img class="item-img" :src="item.path">
-          <div class="item-year">{{ item.year }}</div>
+      <div class="history__intro">
+        За свою карьеру стримера я перепробовал множество разных образов, от самых простых, до самых сложных.<br/>
+        <br/>
+        И всегда интересно оглянуться назад, посмотреть на пройденный путь, оценить прогресс и развитие. На данный момент
+        число сделанных мною косплеев и образова равняется <span>{{ left.length + right.length}}</span>! Предлагаю вместе пройти весь путь
+        и кто-то поностальгирует и вспомнит приятное, а кто-то узнает что-то новое!
+      </div>
+
+      <div class="history__images">
+        <div class="history__left">
+          <div class="history-item" v-for="item in left" :key="item.id">
+            <div class="item-desc">{{ item.name }}</div>
+            <img class="item-img" :src="item.path">
+            <div class="item-year">{{ item.year }}</div>
+          </div>
+        </div>
+
+        <div class="history__right">
+          <div class="history-item secondAnim" v-for="item in right" :key="item.id">
+            <div class="item-desc">{{ item.name }}</div>
+            <img class="item-img" :src="item.path">
+            <div class="item-year">{{ item.year }}</div>
+          </div>
         </div>
       </div>
 
-      <div class="history__right">
-        <div class="history-item secondAnim" v-for="item in right" :key="item.id">
-          <div class="item-desc">{{ item.name }}</div>
-          <img class="item-img" :src="item.path">
-          <div class="item-year">{{ item.year }}</div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -447,12 +458,28 @@ export default {
     justify-content: end;
     .history-wrapper {
       display: flex;
-      width: 50%;
-      height: 100%;
-      margin-right: 10%;
+      width: 90%;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 50px;
+      .history__intro {
+        position: relative;
+        flex-direction: column;
+        color: white;
+        font-size: 18px;
+        span {
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
+      .history__images {
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+      }
       .history__left,
       .history__right {
-        width: 50%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -460,7 +487,7 @@ export default {
       .history__right {
         margin-top: 135px;
         @media (max-width: 450px) {
-          margin-top: 295px;
+          margin-top: 300px;
         }
       }
       .history-item {
@@ -469,6 +496,7 @@ export default {
         border-radius: 15px;
         text-align: center;
         background: white;
+        border: 1px solid black;
         animation: move 6s infinite linear;
         @media (max-width: 450px) {
           margin-top: 300px;
@@ -497,9 +525,24 @@ export default {
       @media (max-width: 1024px) {
         width: 100%;
         margin-right: 0;
+        .history__intro {
+          width: 90%;
+          margin: auto;
+        }
+        .history__images {
+          justify-content: center;
+        }
+        .history__left,
+        .history__right {
+          width: 50%;
+        }
       }
       @media (max-width: 450px) {
-        width: 60%;
+        width: 100%;
+        .history__left,
+        .history__right {
+          width: 20%;
+        }
       }
     }
     @media (max-width: 1024px) {
