@@ -5,7 +5,7 @@
         За свою карьеру стримера я перепробовал множество разных образов, от самых простых, до самых сложных.<br/>
         <br/>
         И всегда интересно оглянуться назад, посмотреть на пройденный путь, оценить прогресс и развитие. На данный момент
-        число сделанных мною косплеев и образова равняется <span>{{ left.length + right.length}}</span>! Предлагаю вместе пройти весь путь
+        число сделанных мною косплеев равняется <span>{{ left.length + right.length}}</span>! Предлагаю вместе пройти весь путь
         и кто-то поностальгирует и вспомнит приятное, а кто-то узнает что-то новое!
       </div>
 
@@ -469,7 +469,7 @@ export default {
         font-size: 18px;
         span {
           font-weight: bold;
-          font-size: 24px;
+          font-size: 22px;
         }
       }
       .history__images {
@@ -496,7 +496,8 @@ export default {
         border-radius: 15px;
         text-align: center;
         background: white;
-        border: 1px solid black;
+        border: 3px solid black;
+        transition: box-shadow 0.2s linear;
         animation: move 6s infinite linear;
         @media (max-width: 450px) {
           margin-top: 300px;
@@ -515,9 +516,20 @@ export default {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
+          transition: transform 0.2s linear;
+          @media (min-width: 1280px) {
+            &:hover {
+              transform: scale(2);
+              border: 3px solid black;
+              border-radius: 15px;
+            }
+          }
         }
         &:first-child {
           margin-top: 0px;
+        }
+        &:hover {
+          box-shadow: 0px 0px 12px 12px rgba(255, 255, 255, 0.64);
         }
       }
       .secondAnim {
