@@ -228,12 +228,29 @@ export default {
       border-radius: 50px;
       margin: auto;
       margin-top: 20px;
-      .clip {
-        width: 250px;
-        height: 150px;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 30px;
+      .videos {
+        margin-top: 25px;
+        text-align: center;
+        .clip {
+          width: 450px;
+          margin: 10px;
+          //padding: 10px;
+          margin-top: 10px;
+          border-radius: 30px;
+          //background: beige;
+          @media (max-width: 1200px) {
+            width: 350px;
+          }
+          @media (max-width: 1000px) {
+            width: 300px;
+          }
+          @media (max-width: 768px) {
+            width: 90%;
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        width: 100%;
       }
     }
   }

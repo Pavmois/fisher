@@ -36,6 +36,7 @@ export default {
     background-color: #3f3c3c;
     background-image: url('/src/assets/background.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 40% 0%;
     font-family: 'Alice';
 
