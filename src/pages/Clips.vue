@@ -197,7 +197,7 @@ export default {
       
     }
     .legend-color {
-      color: gold;
+      color: #ff8000;
     }
     .legend-border {
       box-shadow: 0px 0px 24px 6px #ff8000;
@@ -234,10 +234,8 @@ export default {
         .clip {
           width: 450px;
           margin: 10px;
-          //padding: 10px;
           margin-top: 10px;
           border-radius: 30px;
-          //background: beige;
           @media (max-width: 1200px) {
             width: 350px;
           }

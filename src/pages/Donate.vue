@@ -16,22 +16,22 @@
 
           <!-- Блок звуков за рубли -->
           <div class="example">
-            <div class="example-desc">Оповещения за рубли</div>
+            <div class="example-desc"><span>Оповещения за рубли</span></div>
 
-            <div class="example-item" v-for="donate in donates" :key="donate.id">
+            <div class="example-item" v-for="donate in donates" :key="donate.id" @click.prevent="donate.isPlaying ? pause(donate) : play(donate)">
               <div class="item-text">{{ donate.name }}</div>
-              <div class="item-play" @click.prevent="donate.isPlaying ? pause(donate) : play(donate)">{{ donate.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+              <div class="item-play">{{ donate.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
 
           </div>
 
           <!-- Блок звуков за баллы канала (фишки) -->
           <div class="example">
-            <div class="example-desc">Оповещения за баллы канала</div>
+            <div class="example-desc"><span>Оповещения за баллы канала</span></div>
 
-            <div class="example-item" v-for="fish in fishpoints" :key="fish.id">
+            <div class="example-item" v-for="fish in fishpoints" :key="fish.id" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">
               <div class="item-text">{{ fish.name }}</div>
-              <div class="item-play" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">{{ fish.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+              <div class="item-play">{{ fish.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
 
           </div>
@@ -228,13 +228,12 @@ export default {
           }
 
           .button {
+            font-family: Scary;
             min-width: 300px;
             min-height: 60px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 22px;
+            font-size: 38px;
             text-transform: uppercase;
-            letter-spacing: 1.3px;
-            font-weight: 700;
+            letter-spacing: 2px;
             color: white;
             background: #000000;
             background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(34, 34, 34) 100%);
@@ -246,6 +245,9 @@ export default {
             outline: none;
             position: relative;
             padding: 10px;
+            @media (max-width: 768px) {
+              font-size: 32px;
+            }
             }
 
           button::before {
@@ -316,7 +318,7 @@ export default {
           .donate__sounds-example {
             display: flex;
             justify-content: space-evenly;
-            margin-top: 25px;
+            margin-top: 50px;
 
             .example {
               display: flex;
@@ -325,6 +327,15 @@ export default {
 
               .example-desc {
                 text-align: center;
+                margin-bottom: 15px;
+                span {
+                  font-family: 'Scary';
+                  font-size: 22px;
+                  background: black;
+                  border-radius: 30px;
+                  padding: 10px;
+                  box-shadow: 0px 0px 12px 4px white;
+                }
               }
               .example-item {
                 display: flex;
@@ -352,6 +363,9 @@ export default {
                   &:hover {
                     cursor: pointer;
                   }
+                }
+                &:hover {
+                  cursor: pointer;
                 }
               }
 
