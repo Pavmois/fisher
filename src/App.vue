@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
   body {
     margin: 0;
     padding: 0;
@@ -36,5 +37,16 @@ export default {
     background-image: url('/src/assets/background.jpg');
     background-repeat: no-repeat;
     background-position: 40% 0%;
+    font-family: 'Alice';
+
+  }
+  
+  @font-face {
+    font-family: 'Scary';
+    src: url('~@/fonts/RubikWetPaint-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Alice';
+    src: url('~@/fonts/Alice-Regular.woff') format('woff');
   }
 </style>

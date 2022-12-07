@@ -44,7 +44,7 @@ export default {
         },
         {
           id: '3',
-          name: 'Ведьмак(10й стрим)',
+          name: 'Ведьмак',
           year: '1 мая 2020г.',
           path: require("../assets/history/3.jpg")
         },
@@ -104,7 +104,7 @@ export default {
         },
         {
           id: '23',
-          name: 'Gothic 1',
+          name: 'Gothic',
           year: ' 15 июн. 2021г.',
           path: require("../assets/history/23.jpg")
         },
@@ -250,13 +250,13 @@ export default {
         },
         {
           id: '4',
-          name: 'Ведьмак-2 (стрим 28)',
+          name: 'Ведьмак',
           year: '28 июн. 2020г.',
           path: require("../assets/history/4.jpg")
         },
         {
           id: '6',
-          name: 'Ведьмак-2 (стрим 46)',
+          name: 'Ведьмак',
           year: '9 авг. 2020г.',
           path: require("../assets/history/6.jpg")
         },
@@ -506,6 +506,8 @@ export default {
         .item-year {
           text-transform: uppercase;
           padding: 5px;
+          font-family: 'Scary';
+          color: #b80707;
         }
         .item-img {
           width: 100%;
