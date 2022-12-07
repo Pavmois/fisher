@@ -25,7 +25,6 @@ export default {
   text-align: center;
   color: #fff;
   padding-top: 20px;
-  padding-bottom: 20px;
   width: 100vw;
   display: flex;
   justify-content: center;

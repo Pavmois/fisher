@@ -2,19 +2,15 @@
   <div class="history">
     <div class="history-wrapper">
       <div class="history__left">
-
         <div class="history-item" v-for="item in left" :key="item.id">
           <div class="item-desc">{{ item.name }}</div>
           <img class="item-img" :src="item.path">
           <div class="item-year">{{ item.year }}</div>
         </div>
-
       </div>
 
-      <div class="history__mid"></div>
-
       <div class="history__right">
-        <div class="history-item mt75" v-for="item in right" :key="item.id">
+        <div class="history-item secondAnim" v-for="item in right" :key="item.id">
           <div class="item-desc">{{ item.name }}</div>
           <img class="item-img" :src="item.path">
           <div class="item-year">{{ item.year }}</div>
@@ -453,46 +449,60 @@ export default {
       display: flex;
       width: 50%;
       height: 100%;
-      border: 1px solid red;
       margin-right: 10%;
       .history__left,
       .history__right {
-        width: 49%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .history__mid {
-        width: 2%;
-        background: white;
+      .history__right {
+        margin-top: 135px;
+        @media (max-width: 450px) {
+          margin-top: 295px;
+        }
       }
       .history-item {
         width: 220px;
-        margin-top: 25px;
+        margin-top: 100px;
         border-radius: 15px;
         text-align: center;
         background: white;
+        animation: move 6s infinite linear;
+        @media (max-width: 450px) {
+          margin-top: 300px;
+        }
+
         .item-desc,
         .item-year {
           text-transform: uppercase;
+          padding: 5px;
         }
         .item-img {
           width: 100%;
+          height: 230px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
         }
+        &:first-child {
+          margin-top: 0px;
+        }
       }
-      .mt75 {
-        margin-top: 25px;
-        background: antiquewhite;
+      .secondAnim {
+        animation: move 4s infinite linear;
       }
 
-      @media (max-width: 768px) {
-        width: 100%;        
+      @media (max-width: 1024px) {
+        width: 100%;
+        margin-right: 0;
+      }
+      @media (max-width: 450px) {
+        width: 60%;
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       justify-content: center;        
     }
   }
@@ -501,5 +511,17 @@ export default {
     width: 0;
     height: 0;
   }
+
+  @keyframes move {
+  0% {
+    transform: translateY(5%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(5%);
+  }
+}
 
 </style>
