@@ -10,8 +10,8 @@ const routes = [
     component: Home
   },
   {
-    path: '/gallery',
-    component: () => import('../pages/Gallery.vue')
+    path: '/links',
+    component: () => import('../pages/Links.vue')
   },
   {
     path: '/donate',

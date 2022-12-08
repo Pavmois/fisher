@@ -2,10 +2,10 @@
   <div class="nav_bar">
     <nav>
       <router-link to="/">Главная</router-link> |
-      <router-link to="/gallery">Галерея</router-link> |
       <router-link to="/donate">Поддержка</router-link> |
       <router-link to="/history">История</router-link> |
-      <router-link to="/clips">Клипы</router-link>
+      <router-link to="/clips">Клипы</router-link> |
+      <router-link to="/links">Ссылки</router-link>
     </nav>
   </div>
 </template>
