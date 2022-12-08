@@ -51,22 +51,22 @@
 
       <div class="quote__text right">
         <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
-        <video class="video" src="@/assets/video/1.mp4" controls></video> 
+        <video class="video specialwidth" src="@/assets/video/1.mp4" controls></video> 
       </div>
 
       <div class="quote__text">
         <span>Также я очень люблю животных</span>
-        <video class="video" src="@/assets/video/волки.mp4" controls></video> 
+        <video class="video specialwidth" src="@/assets/video/волки.mp4" controls></video> 
       </div>
 
       <div class="quote__text right">
         <span>В мою честь пишут песни!</span>
-        <video class="video" src="@/assets/video/космея.mp4" controls></video>
+        <video class="video specialwidth" src="@/assets/video/космея.mp4" controls></video>
       </div>
 
       <div class="quote__text">
         <span>И я даже хожу на конецрты к своим модераторам!</span>
-        <video class="video" src="@/assets/video/osc.mp4" controls></video> 
+        <video class="video specialwidth" src="@/assets/video/osc.mp4" controls></video> 
       </div>
       
     </div>
@@ -169,6 +169,12 @@ export default {
         margin-top: 15px;
         border-radius: 15px;
         transition: all 0.4s linear;
+      }
+      .specialwidth {
+        width:390px;
+        @media (max-width: 768px) {
+          width: 310px;
+        }
       }
 
       .quote__text {
