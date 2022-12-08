@@ -51,17 +51,17 @@
 
       <div class="quote__text right">
         <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
-        <video class="video specialwidth" src="@/assets/video/1.mp4" controls></video> 
+        <video class="video specialwidth" src="@/assets/video/guitar.mp4" controls></video> 
       </div>
 
       <div class="quote__text">
         <span>Также я очень люблю животных</span>
-        <video class="video specialwidth" src="@/assets/video/волки.mp4" controls></video> 
+        <video class="video specialwidth" src="@/assets/video/wolfs.mp4" controls></video> 
       </div>
 
       <div class="quote__text right">
         <span>В мою честь пишут песни!</span>
-        <video class="video specialwidth" src="@/assets/video/космея.mp4" controls></video>
+        <video class="video specialwidth" src="@/assets/video/cosmeya.mp4" controls></video>
       </div>
 
       <div class="quote__text">

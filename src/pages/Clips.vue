@@ -40,133 +40,133 @@ export default {
       legendary: [
         {
         id: '1',
-        path: require("@/assets/clips/legendary/Захват.mp4")
+        path: require("@/assets/clips/legendary/1.mp4")
         },
         {
         id: '2',
-        path: require("@/assets/clips/legendary/Йорвет.mp4")
+        path: require("@/assets/clips/legendary/2.mp4")
         },
         {
         id: '3',
-        path: require("@/assets/video/кошка.mp4")
+        path: require("@/assets/video/cat.mp4")
         },
         {
         id: '4',
-        path: require("@/assets/clips/legendary/Маления.mp4")
+        path: require("@/assets/clips/legendary/4.mp4")
         },
         {
         id: '5',
-        path: require("@/assets/clips/legendary/Противогаз.mp4")
+        path: require("@/assets/clips/legendary/5.mp4")
         },
         {
         id: '6',
-        path: require("@/assets/clips/legendary/СуперСовпадение.mp4")
+        path: require("@/assets/clips/legendary/6.mp4")
         },
       ],
       epic: [
         {
         id: '1',
-        path: require("@/assets/clips/epic/Бахнем.mp4")
+        path: require("@/assets/clips/epic/1.mp4")
         },
         {
         id: '2',
-        path: require("@/assets/clips/epic/Володарский.mp4")
+        path: require("@/assets/clips/epic/2.mp4")
         },
         {
         id: '3',
-        path: require("@/assets/clips/epic/МинусШпрот.mp4")
+        path: require("@/assets/clips/epic/3.mp4")
         },
         {
         id: '4',
-        path: require("@/assets/clips/epic/Ноги.mp4")
+        path: require("@/assets/clips/epic/4.mp4")
         },
         {
         id: '5',
-        path: require("@/assets/clips/epic/Обливион.mp4")
+        path: require("@/assets/clips/epic/5.mp4")
         },
         {
         id: '6',
-        path: require("@/assets/clips/epic/Пальцы.mp4")
+        path: require("@/assets/clips/epic/6.mp4")
         },
         {
         id: '7',
-        path: require("@/assets/clips/epic/СюрпризФорест.mp4")
+        path: require("@/assets/clips/epic/7.mp4")
         }
       ],
       rare: [
         {
         id: '1',
-        path: require("@/assets/clips/rare/Ковёр.mp4")
+        path: require("@/assets/clips/rare/1.mp4")
         },
         {
         id: '2',
-        path: require("@/assets/clips/rare/Орк.mp4")
+        path: require("@/assets/clips/rare/2.mp4")
         },
         {
         id: '3',
-        path: require("@/assets/clips/rare/Песня.mp4")
+        path: require("@/assets/clips/rare/3.mp4")
         },
         {
         id: '4',
-        path: require("@/assets/clips/rare/Плот.mp4")
+        path: require("@/assets/clips/rare/4.mp4")
         },
         {
         id: '5',
-        path: require("@/assets/clips/rare/ТроллятДашку.mp4")
+        path: require("@/assets/clips/rare/5.mp4")
         },
         {
         id: '6',
-        path: require("@/assets/clips/rare/Фраер.mp4")
+        path: require("@/assets/clips/rare/6.mp4")
         },
         {
         id: '7',
-        path: require("@/assets/clips/rare/Шлем.mp4")
+        path: require("@/assets/clips/rare/7.mp4")
         }
       ],
       simple: [
         {
         id: '1',
-        path: require("@/assets/clips/simple/Баг.mp4")
+        path: require("@/assets/clips/simple/1.mp4")
         },
         {
         id: '2',
-        path: require("@/assets/clips/simple/БагВедьмак.mp4")
+        path: require("@/assets/clips/simple/2.mp4")
         },
         {
         id: '3',
-        path: require("@/assets/clips/simple/БудьЗдоров.mp4")
+        path: require("@/assets/clips/simple/3.mp4")
         },
         {
         id: '4',
-        path: require("@/assets/clips/simple/Испуг.mp4")
+        path: require("@/assets/clips/simple/4.mp4")
         },
         {
         id: '5',
-        path: require("@/assets/clips/simple/Кратос.mp4")
+        path: require("@/assets/clips/simple/5.mp4")
         },
         {
         id: '6',
-        path: require("@/assets/clips/simple/Марио.mp4")
+        path: require("@/assets/clips/simple/6.mp4")
         },
         {
         id: '7',
-        path: require("@/assets/clips/simple/Мини.mp4")
+        path: require("@/assets/clips/simple/7.mp4")
         },
         {
         id: '8',
-        path: require("@/assets/clips/simple/Огурец.mp4")
+        path: require("@/assets/clips/simple/8.mp4")
         },
         {
         id: '9',
-        path: require("@/assets/clips/simple/Танец.mp4")
+        path: require("@/assets/clips/simple/9.mp4")
         },
         {
         id: '10',
-        path: require("@/assets/clips/simple/Хрюканье.mp4")
+        path: require("@/assets/clips/simple/10.mp4")
         },
         {
         id: '11',
-        path: require("@/assets/clips/simple/Японский.mp4")
+        path: require("@/assets/clips/simple/11.mp4")
         }
       ]
 
