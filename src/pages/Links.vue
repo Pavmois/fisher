@@ -4,20 +4,23 @@
             <div class="links__items">
                 <div class="item">
                     <div class="item-desc">Boosty</div>
-                    <a href="https://boosty.to/davidfisher" target="_blank">ПОДПИСАТЬСЯ</a>
+                    <a class="boosty" href="https://boosty.to/davidfisher" target="_blank">ПОДПИСАТЬСЯ</a>
                     <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Vkontakte</div>
-                    <div class="item-img"></div>
+                    <a class="vk" href="https://vk.com/davidfisherteam" target="_blank">ВСТУПИТЬ</a>
+                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Telegram</div>
-                    <div class="item-img"></div>
+                    <a class="telega" href="https://t.me/DavidFisherPublic" target="_blank">ВОЙТИ В ЧАТ</a>
+                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Youtube</div>
-                    <div class="item-img"></div>
+                    <a class="youtube" href="https://www.youtube.com/TheSimpleHugh" target="_blank">ЛАЙКНУТЬ</a>
+                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
                 </div>
             </div>
         </div>
@@ -59,7 +62,7 @@ export default {
                 border-bottom-right-radius: 15px;
                 text-align: center;
                 .item-desc {
-                    font-size: 18px;
+                    font-size: 22px;
                     font-family: Scary;
                     padding: 10px;
                     background: black;
@@ -73,10 +76,35 @@ export default {
                     border-bottom-left-radius: 15px;
                     border-bottom-right-radius: 15px;
                 }
+                .boosty {
+                    background: #f15f2c;
+                    &:hover {
+                        box-shadow: 0px 0px 12px 6px #f1612c;
+                    }
+                }
+                .vk {
+                    background: #0077ff;
+                    &:hover {
+                        box-shadow: 0px 0px 12px 6px #0077ff;
+                    }
+                }
+                .telega {
+                    background: #2481cc;
+                    &:hover {
+                        box-shadow: 0px 0px 12px 6px #2480cc;
+                    }
+                }
+                .youtube {
+                    background: #ff0000;
+                    &:hover {
+                        box-shadow: 0px 0px 12px 6px #ff0000;
+                    }
+                }
 
                 a {
                     text-decoration: none;
-                    background: orange;
+                    color: white;
+                    font-weight: 600;
                     width: 80%;
                     height: 0px;
                     margin: auto;
@@ -86,10 +114,6 @@ export default {
                     border-radius: 15px;
                     transition: all 0.2s linear;
                     cursor: pointer;
-                    &:hover {
-                        box-shadow: 0px 0px 12px 6px orangered;
-                    }
-
                 }
 
                 &:hover {
