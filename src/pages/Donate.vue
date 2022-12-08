@@ -313,6 +313,14 @@ export default {
 
           .donate__sounds-description {
             font-size: 18px;
+            box-shadow: 0px 0px 12px;
+            border-radius: 15px;
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+            @media (max-width: 768px) {
+              width: 90%;
+            }
           }
 
           .donate__sounds-example {

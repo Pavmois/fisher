@@ -10,7 +10,7 @@
           нового героя, пропускаю его через призму своего восприятия и в конечном
           итоге воплощаю его в жизнь.<br>
           <br>
-          Впрочем, довольных нудных текстов, предлагаю тезисно пройтись по моему
+          Впрочем, довольно нудных текстов, предлагаю тезисно пройтись по моему
           творчеству:
         </span>
       </div>
@@ -18,7 +18,7 @@
       <div class="quote__text">
         <span>
         У меня есть собственный кубок из черепа.<br>
-        И нету хейтеров. Совпадение?
+        И нет хейтеров. Совпадение?
         </span>
         <video class="video" src="@/assets/gif/15.mp4" muted loop autoplay></video> 
       </div>
@@ -70,14 +70,81 @@
       </div>
       
     </div>
+    <div class="happy">
+      <div class="happy__desc">
+        <span>ПОЗДРАВЛЕНИЯ</span><br><br>
+        Это эксклюзивный блок посвящённый Дню Рождения Давида!
+      </div>
+      <div class="happy__voice">
+
+        <div class="example">
+          <div class="example-item" v-for="item in left" :key="item.id" @click.prevent="item.isPlaying ? pause(item) : play(item)">
+            <div class="item-text">{{ item.name }}</div>
+            <div class="item-play">{{ item.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+          </div> 
+        </div>
+
+        <div class="example">
+          <div class="example-item" v-for="item in right" :key="item.id" @click.prevent="item.isPlaying ? pause(item) : play(item)">
+            <div class="item-text">{{ item.name }}</div>
+            <div class="item-play">{{ item.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  methods:{
-    click: function() {
-      //alert(11);
+  data() {
+    return {
+      left: [
+        {
+          id: '1',
+          name: 'Asmasmas',
+          file: new Audio(require("@/assets/audio/happy/Asmasmas.ogg")),
+          isPlaying: false
+        },
+        {
+          id: '2',
+          name: 'Ornghze',
+          file: new Audio(require("@/assets/audio/happy/Ornghze.ogg")),
+          isPlaying: false
+        },
+        {
+          id: '3',
+          name: 'MariaDrad',
+          file: new Audio(require("@/assets/audio/happy/MariaDrad.ogg")),
+          isPlaying: false
+        }
+      ],
+      right: [
+        {
+          id: '1',
+          name: 'Fanmega',
+          file: new Audio(require("@/assets/audio/happy/Fanmega.ogg")),
+          isPlaying: false
+        },
+        {
+          id: '2',
+          name: 'Oberon',
+          file: new Audio(require("@/assets/audio/happy/Oberon.ogg")),
+          isPlaying: false
+        },
+      ]
+    }
+  },
+  methods: {
+    play (audio) {
+      audio.isPlaying = true;
+      audio.file.play();
+    },
+    
+    pause (audio) {
+      audio.isPlaying = false;
+      audio.file.pause();
     }
   }
 }
@@ -129,6 +196,90 @@ export default {
       @media (max-width: 475px) {
         .video {
           width: 100%;
+        }
+      }
+    }
+    .happy {
+      width: 50%;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      .happy__desc {
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        span {
+          font-family: Scary;
+          padding: 10px;
+          background: black;
+          border-radius: 30px;
+        }
+      }
+      .happy__voice {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+          .example {
+          display: flex;
+          flex-direction: column;
+          width: 45%;
+          color: white;
+
+          .example-desc {
+            text-align: center;
+            margin-bottom: 15px;
+            span {
+              font-family: 'Scary';
+              font-size: 22px;
+              background: black;
+              border-radius: 30px;
+              padding: 10px;
+              box-shadow: 0px 0px 12px 4px white;
+            }
+          }
+          .example-item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            width: 100%;
+            background: rgba(31, 46, 58, 0.65);
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            .item-text {
+              margin-left: 10px;
+              font-size: 18px;
+              line-height: 36px;
+            }
+            .item-play {
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              border-radius: 50%;
+              margin-right: 10px;
+              background: #b80707;
+              text-align: center;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          }
+      }
+
+      @media (max-width: 768px) {
+        width: 90%;
+        font-size: 18px;
+        .happy__voice {
+          flex-direction: column;
+          .example {
+            width: 100%;
+          }
         }
       }
     }

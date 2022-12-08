@@ -467,6 +467,11 @@ export default {
         flex-direction: column;
         color: white;
         font-size: 18px;
+        box-shadow: 0px 0px 12px;
+        border-radius: 15px;
+        width: 60%;
+        margin: auto;
+        padding: 10px;
         span {
           font-weight: bold;
           font-size: 22px;

@@ -2,8 +2,8 @@
     <div class="links__page">
         <div class="links__wrapper">
             <div class="links_desc">
-                Ниже можно найти самые разные способы поддержать меня, а при наведении
-                на блок даже увидеть мою реакцию:
+                Ниже можно найти самые разные способы поддержать меня, а при взаимодействии
+                с блоком даже увидеть мою реакцию:
             </div>
             <div class="links__items">
                 <div class="item">
@@ -53,8 +53,14 @@ export default {
         .links_desc {
             font-size: 18px;
             color: white;
-            width: 90%;
             margin: auto;
+            box-shadow: 0px 0px 12px;
+            border-radius: 15px;
+            width: 60%;
+            padding: 10px;
+            @media (max-width: 768px) {
+              width: 90%;
+            }
         }
         .links__items {
             display: flex;
