@@ -50,91 +50,91 @@ export default {
         {
           id: '30',
           name: '30 рублей',
-          file: new Audio('./audio/donate/30.mp3'),
+          file: new Audio(require("@/assets/audio/donate/30.mp3")),
           isPlaying: false
         },
         {
           id: '31-99',
           name: '31-99 рублей',
-          file: new Audio('./audio/donate/31-99.mp3'),
+          file: new Audio(require("@/assets/audio/donate/31-99.mp3")),
           isPlaying: false
         },
         {
           id: '50(1)',
           name: '50 рублей (вариант 1)',
-          file: new Audio('./audio/donate/50(1).mp3'),
+          file: new Audio(require("@/assets/audio/donate/50(1).mp3")),
           isPlaying: false
         },
         {
           id: '50(2)',
           name: '50 рублей (вариант 2)',
-          file: new Audio('./audio/donate/50(2).mp3'),
+          file: new Audio(require("@/assets/audio/donate/50(2).mp3")),
           isPlaying: false
         },
         {
           id: '100',
           name: '100 рублей',
-          file: new Audio('./audio/donate/100.mp3'),
+          file: new Audio(require("@/assets/audio/donate/100.mp3")),
           isPlaying: false
         },
         {
           id: '101-499(1)',
           name: '101-499 рублей (вариант 1)',
-          file: new Audio('./audio/donate/101-499(1).mp3'),
+          file: new Audio(require("@/assets/audio/donate/101-499(1).mp3")),
           isPlaying: false
         },
         {
           id: '101-499(2)',
           name: '101-499 рублей (вариант 2)',
-          file: new Audio('./audio/donate/101-499(2).mp3'),
+          file: new Audio(require("@/assets/audio/donate/101-499(2).mp3")),
           isPlaying: false
         },
         {
           id: '500',
           name: '500 рублей',
-          file: new Audio('./audio/donate/500.mp3'),
+          file: new Audio(require("@/assets/audio/donate/500.mp3")),
           isPlaying: false
         },
         {
           id: '501-999',
           name: '501-999 рублей',
-          file: new Audio('./audio/donate/501-999.mp3'),
+          file: new Audio(require("@/assets/audio/donate/501-999.mp3")),
           isPlaying: false
         },
         {
           id: '666',
           name: '666 рублей',
-          file: new Audio('./audio/donate/666.mp3'),
+          file: new Audio(require("@/assets/audio/donate/666.mp3")),
           isPlaying: false
         },
         {
           id: '777',
           name: '777 рублей',
-          file: new Audio('./audio/donate/777.mp3'),
+          file: new Audio(require("@/assets/audio/donate/777.mp3")),
           isPlaying: false
         },
         {
           id: '1000',
           name: '1000 рублей',
-          file: new Audio('./audio/donate/1000.mp3'),
+          file: new Audio(require("@/assets/audio/donate/1000.mp3")),
           isPlaying: false
         },
         {
           id: '1001-4999',
           name: '1001-4999 рублей',
-          file: new Audio('./audio/donate/1001-4999.mp3'),
+          file: new Audio(require("@/assets/audio/donate/1001-4999.mp3")),
           isPlaying: false
         },
         {
           id: '5000-9999',
           name: '5000-9999 рублей',
-          file: new Audio('./audio/donate/5000-9999.mp3'),
+          file: new Audio(require("@/assets/audio/donate/5000-9999.mp3")),
           isPlaying: false
         },
         {
           id: '10000',
           name: '10000+ рублей',
-          file: new Audio('./audio/donate/10000.mp3'),
+          file: new Audio(require("@/assets/audio/donate/10000.mp3")),
           isPlaying: false
         }
       ],
@@ -142,43 +142,43 @@ export default {
         {
           id: 'gomez',
           name: 'За Гомеза!',
-          file: new Audio('./audio/fishpoints/gomez.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/gomez.mp3")),
           isPlaying: false
         },
         {
           id: 'tvar',
           name: 'Ещё одна!',
-          file: new Audio('./audio/fishpoints/tvar.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/tvar.mp3")),
           isPlaying: false
         },
         {
           id: 'history',
           name: 'История',
-          file: new Audio('./audio/fishpoints/history.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/history.mp3")),
           isPlaying: false
         },
         {
           id: 'vip',
           name: 'VIP-статус',
-          file: new Audio('./audio/fishpoints/vip.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/vip.mp3")),
           isPlaying: false
         },
         {
           id: 'drink',
           name: 'Бахнуть со стримером',
-          file: new Audio('./audio/fishpoints/drink.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/drink.mp3")),
           isPlaying: false
         },
         {
           id: 'pokormit',
           name: 'Покормить стримера',
-          file: new Audio('./audio/fishpoints/pokormit.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/pokormit.mp3")),
           isPlaying: false
         },
         {
           id: 'tost',
           name: 'Тост',
-          file: new Audio('./audio/fishpoints/tost.mp3'),
+          file: new Audio(require("@/assets/audio/fishpoints/tost.mp3")),
           isPlaying: false
         }
       ]

@@ -48,7 +48,7 @@ export default {
         },
         {
         id: '3',
-        path: require("@/assets/clips/legendary/Кошка.mp4")
+        path: require("@/assets/video/кошка.mp4")
         },
         {
         id: '4',
