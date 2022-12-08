@@ -11,7 +11,7 @@
       <div class="quote__text right">
         <span>Выпил кошку</span>
         <!-- <video class="video" src="@/assets/video/кошка.mp4" controls></video> -->
-        <video class="video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
+        <video class="video" src="@/assets/video/кошка.mp4" autoplay loop muted></video> 
       </div>
 
       <div class="quote__text">

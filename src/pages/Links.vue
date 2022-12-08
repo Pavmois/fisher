@@ -5,22 +5,22 @@
                 <div class="item">
                     <div class="item-desc">Boosty</div>
                     <a class="boosty" href="https://boosty.to/davidfisher" target="_blank">ПОДПИСАТЬСЯ</a>
-                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
+                    <video class="item-video" src="@/assets/gif/potionsGeralt.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Vkontakte</div>
                     <a class="vk" href="https://vk.com/davidfisherteam" target="_blank">ВСТУПИТЬ</a>
-                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
+                    <video class="item-video" src="@/assets/gif/13.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Telegram</div>
                     <a class="telega" href="https://t.me/DavidFisherPublic" target="_blank">ВОЙТИ В ЧАТ</a>
-                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
+                    <video class="item-video" src="@/assets/gif/16.mp4" autoplay loop muted></video>
                 </div>
                 <div class="item">
                     <div class="item-desc">Youtube</div>
                     <a class="youtube" href="https://www.youtube.com/TheSimpleHugh" target="_blank">ЛАЙКНУТЬ</a>
-                    <video class="item-video" src="@/assets/video/potionsGeralt.mp4" autoplay loop muted></video>
+                    <video class="item-video" src="@/assets/gif/like-fast.mp4" height="250px" autoplay loop muted></video>
                 </div>
             </div>
         </div>
@@ -49,6 +49,7 @@ export default {
         .links__items {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
             .item {
                 display: flex;
                 flex-direction: column;
@@ -61,6 +62,8 @@ export default {
                 border-bottom-left-radius: 15px;
                 border-bottom-right-radius: 15px;
                 text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
                 .item-desc {
                     font-size: 22px;
                     font-family: Scary;
@@ -119,7 +122,7 @@ export default {
                 &:hover {
                     height: 250px;
                     .item-video {
-                        height: 209px;
+                        height: 100%;
                     }
                     a {
                         font-size: 18px;
