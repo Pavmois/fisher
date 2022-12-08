@@ -1,6 +1,10 @@
 <template>
     <div class="links__page">
         <div class="links__wrapper">
+            <div class="links_desc">
+                Ниже можно найти самые разные способы поддержать меня, а при наведении
+                на блок даже увидеть мою реакцию:
+            </div>
             <div class="links__items">
                 <div class="item">
                     <div class="item-desc">Boosty</div>
@@ -46,6 +50,12 @@ export default {
         margin: auto;
         margin-top: 50px;
         color: white;
+        .links_desc {
+            font-size: 18px;
+            color: white;
+            width: 90%;
+            margin: auto;
+        }
         .links__items {
             display: flex;
             justify-content: space-around;
