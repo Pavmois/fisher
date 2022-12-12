@@ -104,19 +104,31 @@ export default {
         {
           id: '1',
           name: 'Asmasmas',
-          file: new Audio(require("@/assets/audio/happy/Asmasmas.ogg")),
+          file: new Audio(require("@/assets/audio/happy/Asmasmas.mp3")),
           isPlaying: false
         },
         {
           id: '2',
           name: 'Ornghze',
-          file: new Audio(require("@/assets/audio/happy/Ornghze.ogg")),
+          file: new Audio(require("@/assets/audio/happy/Ornghze.mp3")),
           isPlaying: false
         },
         {
           id: '3',
           name: 'MariaDrad',
-          file: new Audio(require("@/assets/audio/happy/MariaDrad.ogg")),
+          file: new Audio(require("@/assets/audio/happy/MariaDrad.mp3")),
+          isPlaying: false
+        },
+        {
+          id: '4',
+          name: 'Bezcell',
+          file: new Audio(require("@/assets/audio/happy/Bezcell.mp3")),
+          isPlaying: false
+        },
+        {
+          id: '5',
+          name: 'Vasilisa',
+          file: new Audio(require("@/assets/audio/happy/Vasilisa.mp3")),
           isPlaying: false
         }
       ],
@@ -124,15 +136,27 @@ export default {
         {
           id: '1',
           name: 'Fanmega',
-          file: new Audio(require("@/assets/audio/happy/Fanmega.ogg")),
+          file: new Audio(require("@/assets/audio/happy/Fanmega.mp3")),
           isPlaying: false
         },
         {
           id: '2',
           name: 'Oberon',
-          file: new Audio(require("@/assets/audio/happy/Oberon.ogg")),
+          file: new Audio(require("@/assets/audio/happy/Oberon.mp3")),
           isPlaying: false
         },
+        {
+          id: '3',
+          name: 'Lier',
+          file: new Audio(require("@/assets/audio/happy/Lier.mp3")),
+          isPlaying: false
+        },
+        {
+          id: '4',
+          name: 'DirectorCCCP',
+          file: new Audio(require("@/assets/audio/happy/DirectorCCCP.mp3")),
+          isPlaying: false
+        }
       ]
     }
   },
