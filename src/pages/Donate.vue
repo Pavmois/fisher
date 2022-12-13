@@ -27,7 +27,7 @@
 
           <!-- Блок звуков за баллы канала (фишки) -->
           <div class="example">
-            <div class="example-desc"><span>Оповещения за баллы канала</span></div>
+            <div class="example-desc"><span>Оповещения за баллы</span></div>
 
             <div class="example-item" v-for="fish in fishpoints" :key="fish.id" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">
               <div class="item-text">{{ fish.name }}</div>

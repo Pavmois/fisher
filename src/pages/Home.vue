@@ -70,6 +70,8 @@
       </div>
       
     </div>
+
+    <!-- Блок с поздравлениями на день рождения -->
     <div class="happy">
       <div class="happy__desc">
         <span>ПОЗДРАВЛЕНИЯ</span><br><br>
@@ -86,6 +88,28 @@
 
         <div class="example">
           <div class="example-item" v-for="item in right" :key="item.id" @click.prevent="item.isPlaying ? pause(item) : play(item)">
+            <div class="item-text">{{ item.name }}</div>
+            <div class="item-play">{{ item.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+          </div> 
+        </div>
+        
+      </div>
+      <!-- Временная копия для сепарации -->
+      <div class="happy__desc" style="margin-top: 20px">
+        <span><span style="color: #00ff7f;">Паша</span> и <span style="color: #ff69b4;">Даша</span></span><br><br>
+        Это эксклюзивный блок посвящённый Дню Рождения Давида!
+      </div>
+      <div class="happy__voice">
+
+        <div class="example">
+          <div class="example-item" v-for="item in dasha" :key="item.id" @click.prevent="item.isPlaying ? pause(item) : play(item)">
+            <div class="item-text">{{ item.name }}</div>
+            <div class="item-play">{{ item.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
+          </div> 
+        </div>
+
+        <div class="example">
+          <div class="example-item" v-for="item in pasha" :key="item.id" @click.prevent="item.isPlaying ? pause(item) : play(item)">
             <div class="item-text">{{ item.name }}</div>
             <div class="item-play">{{ item.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
           </div> 
@@ -157,7 +181,24 @@ export default {
           file: new Audio(require("@/assets/audio/happy/DirectorCCCP.mp3")),
           isPlaying: false
         }
+      ],
+      pasha: [
+        {
+          id: '1',
+          name: 'Дашуня',
+          file: new Audio(require("@/assets/audio/happy/Daria.mp3")),
+          isPlaying: false
+        }
+      ],
+      dasha: [
+        {
+          id: '1',
+          name: 'Пашуня',
+          file: new Audio(require("@/assets/audio/happy/Daria.mp3")),
+          isPlaying: false
+        }
       ]
+
     }
   },
   methods: {
