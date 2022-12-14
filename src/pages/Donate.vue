@@ -12,31 +12,27 @@
           <br>
           А чтобы донатить было не так скучно, на некоторые суммы есть особенные эффекты, созданные и записанные мною лично. И да, как честный стример предлагаю заранее узнать, за что ты платишь:
         </div>
-        <div class="donate__sounds-example">
 
+        <div class="donate__sounds-example">
           <!-- Блок звуков за рубли -->
           <div class="example">
             <div class="example-desc"><span>Оповещения за рубли</span></div>
-
             <div class="example-item" v-for="donate in donates" :key="donate.id" @click.prevent="donate.isPlaying ? pause(donate) : play(donate)">
               <div class="item-text">{{ donate.name }}</div>
               <div class="item-play">{{ donate.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
-
           </div>
 
           <!-- Блок звуков за баллы канала (фишки) -->
           <div class="example">
             <div class="example-desc"><span>Оповещения за баллы</span></div>
-
             <div class="example-item" v-for="fish in fishpoints" :key="fish.id" @click.prevent="fish.isPlaying ? pause(fish) : play(fish)">
               <div class="item-text">{{ fish.name }}</div>
               <div class="item-play">{{ fish.isPlaying ? '&#10073;&#10073;' : '&#9658;' }}</div>
             </div>          
-
           </div>
-
         </div>
+
       </div>
     </div>
   </div>
@@ -186,13 +182,26 @@ export default {
   },
   methods: {
     play (audio) {
-      audio.isPlaying = true;
-      audio.file.play();
+      this.stopAll(this.donates)
+      this.stopAll(this.fishpoints)
+
+      setTimeout(() => {
+        audio.isPlaying = true;
+        audio.file.play();
+      }, 100);
     },
     
     pause (audio) {
       audio.isPlaying = false;
       audio.file.pause();
+    },
+
+    // При нажатии на запись, остальные останавливаются
+    stopAll(arr) {
+      for (let i = 0; i < arr.length; ++i) {
+        arr[i].isPlaying = false
+        arr[i].file.pause()
+      }
     }
   }
 }
@@ -310,6 +319,7 @@ export default {
         .donate__sounds {
           display: flex;
           flex-direction: column;
+          margin-bottom: 20px;
 
           .donate__sounds-description {
             font-size: 18px;
@@ -354,6 +364,7 @@ export default {
                 border-radius: 20px;
                 padding-top: 5px;
                 padding-bottom: 5px;
+                transition: all 0.2s linear;
                 .item-text {
                   margin-left: 10px;
                   font-size: 18px;
@@ -374,6 +385,7 @@ export default {
                 }
                 &:hover {
                   cursor: pointer;
+                  box-shadow: 0px 0px 6px 3px white;
                 }
               }
 

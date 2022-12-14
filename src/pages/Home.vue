@@ -5,10 +5,10 @@
       <div class="quote__text">
         <span>
           Привет, меня зовут David Fisher и я - стример. На своих
-          трансляциях я уделяю большое внимание погружению в игру, и в первую 
+          трансляциях я уделяю большое внимание погружению в игры и в первую 
           очередь делаю это через косплей. Я тщательно продумываю каждый образ  
-          нового героя, пропускаю его через призму своего восприятия и в конечном
-          итоге воплощаю его в жизнь.<br>
+          нового героя, пропускаю его через призму своего восприятия и, в конечном
+          итоге, воплощаю его в жизнь.<br>
           <br>
           Впрочем, довольно нудных текстов, предлагаю тезисно пройтись по моему
           творчеству:
@@ -75,7 +75,7 @@
     <div class="happy">
       <div class="happy__desc">
         <span>ПОЗДРАВЛЕНИЯ</span><br><br>
-        Это эксклюзивный блок посвящённый Дню Рождения Давида!
+        Эксклюзивный блок посвящённый Дню Рождения Давида!
       </div>
       <div class="happy__voice">
 
@@ -97,7 +97,7 @@
       <!-- Временная копия для сепарации -->
       <div class="happy__desc" style="margin-top: 20px">
         <span><span style="color: #00ff7f;">Паша</span> и <span style="color: #ff69b4;">Даша</span></span><br><br>
-        Это эксклюзивный блок посвящённый Дню Рождения Давида!
+        Совсем уж эксклюзив!
       </div>
       <div class="happy__voice">
 
@@ -194,7 +194,7 @@ export default {
         {
           id: '1',
           name: 'Пашуня',
-          file: new Audio(require("@/assets/audio/happy/Daria.mp3")),
+          file: new Audio(require("@/assets/audio/happy/Pasha.mp3")),
           isPlaying: false
         }
       ]
@@ -203,13 +203,27 @@ export default {
   },
   methods: {
     play (audio) {
-      audio.isPlaying = true;
-      audio.file.play();
+      this.stopAll(this.left)
+      this.stopAll(this.right)
+      this.stopAll(this.pasha)
+      this.stopAll(this.dasha)
+
+      setTimeout(() => {
+        audio.isPlaying = true;
+        audio.file.play();
+      }, 100);
     },
-    
     pause (audio) {
       audio.isPlaying = false;
       audio.file.pause();
+    },
+
+    // При нажатии на запись, остальные останавливаются
+    stopAll(arr) {
+      for (let i = 0; i < arr.length; ++i) {
+        arr[i].isPlaying = false
+        arr[i].file.pause()
+      }
     }
   }
 }
@@ -318,6 +332,7 @@ export default {
             border-radius: 20px;
             padding-top: 5px;
             padding-bottom: 5px;
+            transition: all 0.2s linear;
             .item-text {
               margin-left: 10px;
               font-size: 18px;
@@ -338,6 +353,7 @@ export default {
             }
             &:hover {
               cursor: pointer;
+              box-shadow: 0px 0px 6px 3px white;
             }
           }
           }
