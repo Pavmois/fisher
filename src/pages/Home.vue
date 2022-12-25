@@ -180,6 +180,12 @@ export default {
           name: 'DirectorCCCP',
           file: new Audio(require("@/assets/audio/happy/DirectorCCCP.mp3")),
           isPlaying: false
+        },
+        {
+          id: '5',
+          name: 'FacepalmNote',
+          file: new Audio(require("@/assets/audio/happy/FacePalmNote.mp3")),
+          isPlaying: false
         }
       ],
       pasha: [
