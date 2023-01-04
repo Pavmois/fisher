@@ -65,7 +65,7 @@
       </div>
 
       <div class="quote__text">
-        <span>И я даже хожу на конецрты к своим модераторам!</span>
+        <span>И я даже хожу на концерты к своим модераторам!</span>
         <video class="video specialwidth" src="@/assets/video/osc.mp4" controls></video> 
       </div>
       

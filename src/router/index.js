@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../pages/Home.vue'
+import bridge from '@vkontakte/vk-bridge';
+
+// Отправляет событие инициализации нативному клиенту
+bridge.send("VKWebAppInit");
 
 Vue.use(VueRouter)
 
