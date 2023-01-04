@@ -266,7 +266,7 @@ export default {
         display: flex;
         align-items: start;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 20px;
         color: white;
         font-size: 18px;
 
