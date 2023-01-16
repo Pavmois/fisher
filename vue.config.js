@@ -1,9 +1,4 @@
 module.exports = {
-  // Для публикации на GithubPages -- удалить для релиза
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/fisher/'
-    : '/',
-
   chainWebpack: config => {
     config.resolve.alias.set('vue', '@vue/compat')
 
