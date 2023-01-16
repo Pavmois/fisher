@@ -34,11 +34,11 @@ export default {
     padding: 0;
     height: 100%;
     background-color: #3f3c3c;
-    background-image: url('/src/assets/background.jpg');
+    background-image: url('/src/assets/background2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 0%;
-    font-family: 'Alice';
+    font-family: 'Oswald';
 
     /* Стили для оформления меню  */
     .bm-burger-button {
@@ -124,13 +124,29 @@ export default {
   }
 
 
-  
+  // Шрифты
   @font-face {
     font-family: 'Scary';
     src: url('~@/fonts/RubikWetPaint-Regular.woff') format('woff');
   }
   @font-face {
-    font-family: 'Alice';
-    src: url('~@/fonts/Alice-Regular.woff') format('woff');
+    font-family: 'Oswald';
+    src: url('~@/fonts/Oswald/Oswald-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Oswald-SemiBold';
+    src: url('~@/fonts/Oswald/Oswald-SemiBold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Oswald-Medium';
+    src: url('~@/fonts/Oswald/Oswald-Medium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Oswald-Bold';
+    src: url('~@/fonts/Oswald/Oswald-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Oswald-Light';
+    src: url('~@/fonts/Oswald/Oswald-Light.woff') format('woff');
   }
 </style>
