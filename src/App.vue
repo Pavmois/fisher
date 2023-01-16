@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBarMobile2.vue'
+import NavBar from '@/components/NavBar.vue'
 
 export default {
   name: 'App',
@@ -34,25 +34,20 @@ export default {
     padding: 0;
     height: 100%;
     background-color: #3f3c3c;
-    background-image: url('/src/assets/background2.jpg');
+    background-image: url('/src/assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 0%;
     font-family: 'Oswald';
 
     /* Стили для оформления меню  */
-    .bm-burger-button {
+        .bm-burger-button {
           position: absolute;
           width: 36px;
           height: 30px;
           left: 36px;
           top: 10px;
           cursor: pointer;
-          &:hover {
-            .bm-burger-bars {
-              background-color: #b80707;
-            }
-          }
         }
         .bm-burger-bars {
           background-color: #fff;
@@ -73,7 +68,9 @@ export default {
         .bm-cross {
           background: #bdc3c7;
         }
+        // Крестик закрытия меню
         .bm-cross-button {
+          display: none;
           height: 24px;
           width: 24px;
         }
@@ -84,11 +81,11 @@ export default {
           z-index: 1000; /* Stay on top */
           top: 0;
           left: 0;
-          background-color: rgba(63, 60, 60, 0.8);
+          background-color: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(10px);
-          overflow-x: hidden; /* Disable horizontal scroll */
-          padding-top: 60px; /* Place content 60px from the top */
-          transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
+          overflow-x: hidden;
+          padding-top: 10px; 
+          transition: 0.5s;
         }
     
         .bm-overlay {
@@ -96,11 +93,11 @@ export default {
         }
         .bm-item-list {
           margin-left: 10%;
-          font-size: 20px;
-
+          font-size: 30px;
           a:hover {
             span {
               color: #b80707;
+              font-size: 45px;
             }
           }
           a.router-link-exact-active {
@@ -113,7 +110,7 @@ export default {
         .bm-item-list > * {
           display: flex;
           text-decoration: none;
-          padding: 0.7em;
+          padding: 0;
         }
         .bm-item-list > * > span {
           margin-left: 10px;

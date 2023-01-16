@@ -1,72 +1,187 @@
 <template>
   <div class="home">
     <div class="home__quote-wrapper">
+      <div class="wrapper__header">DAVIDFISHER.RU</div>
 
-      <div class="quote__text">
-        <span>
-          Привет, меня зовут David Fisher и я - стример. На своих
-          трансляциях я уделяю большое внимание погружению в игры и в первую 
-          очередь делаю это через косплей. Я тщательно продумываю каждый образ  
-          нового героя, пропускаю его через призму своего восприятия и, в конечном
-          итоге, воплощаю его в жизнь.<br>
-          <br>
-          Впрочем, довольно нудных текстов, предлагаю тезисно пройтись по моему
-          творчеству:
-        </span>
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Всем привет! На данном сайте можно максимально подробно ознакомиться с моим творчеством,<br/>
+            найти множество интересных подробностей, связанных с костюмами, образами и прочим.
+          </span>
+        </div>
+      </div>
+
+      <!-- Раздел 1 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 1
+          </span>
+        </div>
       </div>
 
       <div class="quote__text">
-        <span>
-        У меня есть собственный кубок из черепа.<br>
-        И нет хейтеров. Совпадение?
-        </span>
-        <video class="video" src="@/assets/gif/15.mp4" muted loop autoplay></video> 
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>
+              У меня есть собственный кубок из черепа.<br>
+              И нет хейтеров. Совпадение?
+            </span>
+          </div>
+          <video class="video" src="@/assets/gif/15.mp4" muted loop autoplay></video> 
+        </div>
       </div>
 
-      <div class="quote__text right">
-        <span>
-        Образ - превыше всего!<br>
-        Я не курю, но ради погружения готов на всё.
-        </span>
-        <video class="video" src="@/assets/gif/smoke.mp4" muted loop autoplay></video> 
-      </div>
 
-      <div class="quote__text">
-        <span>
-        Я всегда очень внимательно слушаю<br>
-        истории чата.
-        </span>
-        <video class="video" src="@/assets/gif/pation.mp4" muted loop autoplay></video> 
-      </div>
-
-      <div class="quote__text right">
-        <span>Всегда искренне радуюсь поддержке меня зрителями...</span>
-        <video class="video" src="@/assets/gif/thanks.mp4" muted loop autoplay></video> 
+      <!-- Раздел 2 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 2
+          </span>
+        </div>
       </div>
 
       <div class="quote__text">
-        <span>...а иногда поддержка поражает масштабами!</span>
-        <video class="video" src="@/assets/gif/donate.mp4" muted loop autoplay></video> 
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>
+              Образ - превыше всего!<br>
+              Я не курю, но ради погружения готов на всё.
+            </span>
+          </div>
+          <video class="video" src="@/assets/gif/smoke.mp4" muted loop autoplay></video> 
+        </div>
       </div>
 
-      <div class="quote__text right">
-        <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
-        <video class="video specialwidth" src="@/assets/video/guitar.mp4" controls></video> 
+      <!-- Раздел 3 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 3
+          </span>
+        </div>
       </div>
 
       <div class="quote__text">
-        <span>Также я очень люблю животных</span>
-        <video class="video specialwidth" src="@/assets/video/wolfs.mp4" controls></video> 
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>
+              Я всегда очень внимательно слушаю<br>
+              истории чата.
+            </span>
+          </div>
+          <video class="video" src="@/assets/gif/pation.mp4" muted loop autoplay></video> 
+        </div>
       </div>
 
-      <div class="quote__text right">
-        <span>В мою честь пишут песни!</span>
-        <video class="video specialwidth" src="@/assets/video/cosmeya.mp4" controls></video>
+      <!-- Раздел 4 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 4
+          </span>
+        </div>
       </div>
 
       <div class="quote__text">
-        <span>И я даже хожу на концерты к своим модераторам!</span>
-        <video class="video specialwidth" src="@/assets/video/osc.mp4" controls></video> 
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>Всегда искренне радуюсь поддержке меня зрителями...</span>
+          </div>
+          <video class="video" src="@/assets/gif/thanks.mp4" muted loop autoplay></video> 
+        </div>
+      </div>
+
+      <!-- Раздел 5 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 5
+          </span>
+        </div>
+      </div>
+
+      <div class="quote__text">
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>...а иногда поддержка поражает масштабами!</span>
+          </div>
+          <video class="video" src="@/assets/gif/donate.mp4" muted loop autoplay></video> 
+        </div>
+      </div>
+
+      <!-- Раздел 6 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 6
+          </span>
+        </div>
+      </div>
+
+      <div class="quote__text">
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
+          </div>
+          <video class="video" src="@/assets/video/guitar.mp4" controls></video> 
+        </div>
+      </div>
+
+      <!-- Раздел 7 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 7
+          </span>
+        </div>
+      </div>
+
+      <div class="quote__text">
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>Также я очень люблю животных</span>
+          </div>
+          <video class="video" src="@/assets/video/wolfs.mp4" controls></video> 
+        </div>
+      </div>
+
+      <!-- Раздел 8 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 8
+          </span>
+        </div>
+      </div>
+
+      <div class="quote__text">
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>В мою честь пишут песни!</span>
+          </div>
+          <video class="video" src="@/assets/video/cosmeya.mp4" controls></video> 
+        </div>
+      </div>
+
+      <!-- Раздел 9 -->
+      <div class="section__name">
+        <div class="section__txt">
+          <span>
+            Раздел 9
+          </span>
+        </div>
+      </div>
+
+      <div class="quote__text">
+        <div class="quote__wrapper">
+          <div class="text-desc">
+            <span>И я даже хожу на концерты к своим модераторам!</span>
+          </div>
+          <video class="video" src="@/assets/video/osc.mp4" controls></video> 
+        </div>
       </div>
       
     </div>
@@ -246,8 +361,31 @@ export default {
     
 
     .home__quote-wrapper {
-      width: 50%;
+      width: 100%;
+      color: white;
       margin: auto;
+
+      .wrapper__header {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: -120px;
+      }
+
+      .section__name {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 120px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        .section__txt {
+          padding: 10px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
 
       .video {
         width: 310px;
@@ -263,26 +401,30 @@ export default {
       }
 
       .quote__text {
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        margin-top: 20px;
-        color: white;
-        font-size: 18px;
-
-        span {
+        margin-top: 0px;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        .quote__wrapper {
+          margin: auto;
+          width: 75%;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
           padding: 10px;
-          border-radius: 15px;
-          box-shadow: 0px 0px 12px;
+          .text-desc {
+            display: flex;
+            align-self: flex-start;
+            span {
+              padding: 10px;
+            }
+          }
         }
 
       }
-      .right {
-        align-items: end;
-      }
 
       @media (max-width: 768px) {
-        width: 90%;
+        width: 100%;
       }
       @media (max-width: 475px) {
         .video {
