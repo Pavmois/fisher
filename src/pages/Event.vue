@@ -10,7 +10,7 @@
                 <div class="desc-bottom">
                     <div class="bottom-header">
                         В зависимости от суммы доната,
-                        на Безымянного в прямом эфире будет накладываться тот или иной эффект. Эффекты делятся на 4 категории:
+                        на Безымянного в прямом эфире будет накладываться тот или иной эффект. Эффекты делятся на 5 категорий:
                     </div>
                     <div class="bottom-footer">
                         <span class="baff">Усиление</span>
@@ -427,7 +427,11 @@ export default {
                     }    
                     @media (max-width: 420px) {
                         grid-template-columns : repeat(1, 1fr);
-                        justify-items: stretch;
+                        justify-items: center;
+                        font-size: 16px;
+                        span {
+                            width: 200px;
+                        }
                     }
                 }
             }
