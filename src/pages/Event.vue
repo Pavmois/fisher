@@ -205,10 +205,166 @@
                         
                         <!-- Триггер  -->
                         <tr class="trigger">
-                            <td>Охотник за головами</td>
+                            <td>Мясной жук</td>
                             <td>0</td>
-                            <td>666</td>
-                            <td>Найми убийцу и отправь его за героем!</td>
+                            <td>33</td>
+                            <td>Призывает мясного жука</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Кротокрыс</td>
+                            <td>0</td>
+                            <td>60</td>
+                            <td>Призывает кротокрыса</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Падальщик</td>
+                            <td>0</td>
+                            <td>68</td>
+                            <td>Призывает падальщика</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Кровавая муха</td>
+                            <td>0</td>
+                            <td>70</td>
+                            <td>Призывает кровавую муху</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Волк</td>
+                            <td>0</td>
+                            <td>99</td>
+                            <td>Призывает волка</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Дождливая погода</td>
+                            <td>0</td>
+                            <td>111</td>
+                            <td>Вызывает дождь</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Солнечная погода</td>
+                            <td>0</td>
+                            <td>121</td>
+                            <td>Заканчивает дождь</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Варан</td>
+                            <td>0</td>
+                            <td>128</td>
+                            <td>Призывает варана</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Кусь</td>
+                            <td>0</td>
+                            <td>132</td>
+                            <td>Антиабуз - пни героя, чтобы он улетел с насиженного места</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Бочка</td>
+                            <td>0</td>
+                            <td>144</td>
+                            <td>Подсади героя - заспавни под ним бочку</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Ползун</td>
+                            <td>0</td>
+                            <td>157</td>
+                            <td>Призыв ползуна</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Луркер</td>
+                            <td>0</td>
+                            <td>217</td>
+                            <td>Призыв луркера</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Ночь</td>
+                            <td>0</td>
+                            <td>224</td>
+                            <td>Перемотать время до ночи</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>День</td>
+                            <td>0</td>
+                            <td>248</td>
+                            <td>Перемотать время до дня</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Гончая</td>
+                            <td>0</td>
+                            <td>292</td>
+                            <td>Призывает гончую</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Гарпия</td>
+                            <td>0</td>
+                            <td>320</td>
+                            <td>Призывает гарпию</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Глорх</td>
+                            <td>0</td>
+                            <td>369</td>
+                            <td>Призывает глорха</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Скелет</td>
+                            <td>0</td>
+                            <td>444</td>
+                            <td>Призывает скелета</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Зомби</td>
+                            <td>0</td>
+                            <td>500</td>
+                            <td>Призывает зомби</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Орк-скаут</td>
+                            <td>0</td>
+                            <td>888</td>
+                            <td>Призывает орка-скаута</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Орк-шамана</td>
+                            <td>0</td>
+                            <td>999</td>
+                            <td>Призывает орка-шамана</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Демон</td>
+                            <td>0</td>
+                            <td>1010</td>
+                            <td>Призывает демона</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Орк-воин</td>
+                            <td>0</td>
+                            <td>1111</td>
+                            <td>Призывает орка-воина</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Голем</td>
+                            <td>0</td>
+                            <td>1333</td>
+                            <td>Призывает голема</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Тролль</td>
+                            <td>0</td>
+                            <td>1500</td>
+                            <td>Призывает тролля</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Лорд Демонов</td>
+                            <td>0</td>
+                            <td>1666</td>
+                            <td>Призывает Лорда Демонов</td>
+                        </tr>
+                        <tr class="trigger">
+                            <td>Смерть</td>
+                            <td>0</td>
+                            <td>2000</td>
+                            <td>Немедленная смерть</td>
                         </tr>
 
                     </tbody>
@@ -345,7 +501,7 @@ export default {
             color: black;
         }
         .trigger {
-            background: #fb7756;
+            background: #bb4123;
         }
      } 
   }
