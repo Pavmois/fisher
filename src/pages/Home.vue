@@ -403,7 +403,7 @@ export default {
       .quote__text {
         margin-top: 0px;
         font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.5); 
         .quote__wrapper {
           margin: auto;
           width: 75%;
