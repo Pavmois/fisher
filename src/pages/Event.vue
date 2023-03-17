@@ -119,10 +119,88 @@
 
                         <!-- Особые события -->
                         <tr class="special">
-                            <td>Спринт</td>
-                            <td>30</td>
-                            <td>150</td>
+                            <td>Люмос</td>
+                            <td>60</td>
+                            <td>44</td>
                             <td>Ускоряет героя</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Минимализм</td>
+                            <td>60</td>
+                            <td>93</td>
+                            <td>Герой превращается в лилипута</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Факир</td>
+                            <td>10</td>
+                            <td>155</td>
+                            <td>Безымнный превращается в факира</td>
+                        </tr>
+                        <tr class="special">
+                            <td>POV</td>
+                            <td>60</td>
+                            <td>170</td>
+                            <td>Вид от первого лица</td>
+                        </tr>
+                        <tr class="special">
+                            <td>гигантизм</td>
+                            <td>60</td>
+                            <td>193</td>
+                            <td>Герой превращается в гиганта</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Туман</td>
+                            <td>60</td>
+                            <td>200</td>
+                            <td>Напустить густой туман</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Карусель</td>
+                            <td>30</td>
+                            <td>202</td>
+                            <td>Камера начинает крутиться как карусель</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Ускорить время</td>
+                            <td>60</td>
+                            <td>234</td>
+                            <td>Ускорение времени вокруг героя</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Боди позитив</td>
+                            <td>120</td>
+                            <td>260</td>
+                            <td>Безымянный в меру упитанный</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Тряхнуть</td>
+                            <td>10</td>
+                            <td>266</td>
+                            <td>Камера сильно трясётся</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Стриптиз</td>
+                            <td>30</td>
+                            <td>300</td>
+                            <td>Вызов танцовщицы</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Флэш</td>
+                            <td>60</td>
+                            <td>432</td>
+                            <td>Замедление времени вокруг героя</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Танец</td>
+                            <td>35</td>
+                            <td>501</td>
+                            <td>Герой танцует</td>
+                        </tr>
+                        <tr class="special">
+                            <td>Перевернуть камеру</td>
+                            <td>60</td>
+                            <td>696</td>
+                            <td>Камера инверсируется</td>
                         </tr>
                         
                         <!-- Триггер  -->
