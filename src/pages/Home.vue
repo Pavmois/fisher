@@ -13,175 +13,63 @@
       </div>
 
       <!-- Раздел 1 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 1
-          </span>
-        </div>
-      </div>
-
-      <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>
-              У меня есть собственный кубок из черепа.<br>
-              И нет хейтеров. Совпадение?
-            </span>
-          </div>
-          <video class="video" src="@/assets/gif/15.mp4" muted loop autoplay></video> 
-        </div>
-      </div>
 
 
       <!-- Раздел 2 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 2
-          </span>
-        </div>
-      </div>
-
       <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>
-              Образ - превыше всего!<br>
-              Я не курю, но ради погружения готов на всё.
-            </span>
-          </div>
-          <video class="video" src="@/assets/gif/smoke.mp4" muted loop autoplay></video> 
-        </div>
+        <span>
+        У меня есть собственный кубок из черепа.<br>
+        И нет хейтеров. Совпадение?
+        </span>
+        <video class="video" src="@/assets/gif/15.mp4" muted loop autoplay></video> 
       </div>
 
       <!-- Раздел 3 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 3
-          </span>
-        </div>
-      </div>
-
-      <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>
-              Я всегда очень внимательно слушаю<br>
-              истории чата.
-            </span>
-          </div>
-          <video class="video" src="@/assets/gif/pation.mp4" muted loop autoplay></video> 
-        </div>
+      <div class="quote__text right">
+        <span>
+        Образ - превыше всего!<br>
+        Я не курю, но ради погружения готов на всё.
+        </span>
+        <video class="video" src="@/assets/gif/smoke.mp4" muted loop autoplay></video> 
       </div>
 
       <!-- Раздел 4 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 4
-          </span>
-        </div>
-      </div>
-
       <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>Всегда искренне радуюсь поддержке меня зрителями...</span>
-          </div>
-          <video class="video" src="@/assets/gif/thanks.mp4" muted loop autoplay></video> 
-        </div>
+        <span>
+        Я всегда очень внимательно слушаю<br>
+        истории чата.
+        </span>
+        <video class="video" src="@/assets/gif/pation.mp4" muted loop autoplay></video> 
       </div>
 
       <!-- Раздел 5 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 5
-          </span>
-        </div>
-      </div>
-
-      <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>...а иногда поддержка поражает масштабами!</span>
-          </div>
-          <video class="video" src="@/assets/gif/donate.mp4" muted loop autoplay></video> 
-        </div>
+      <div class="quote__text right">
+        <span>Всегда искренне радуюсь поддержке меня зрителями...</span>
+        <video class="video" src="@/assets/gif/thanks.mp4" muted loop autoplay></video> 
       </div>
 
       <!-- Раздел 6 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 6
-          </span>
-        </div>
-      </div>
-
       <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
-          </div>
-          <video class="video" src="@/assets/video/guitar.mp4" controls></video> 
-        </div>
+        <span>Я играю на гитаре своим подписчикам.<br> Но в основном после стрима, часа в 4 утра.</span>
+        <video class="video specialwidth" src="@/assets/video/guitar.mp4" controls></video> 
       </div>
 
       <!-- Раздел 7 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 7
-          </span>
-        </div>
-      </div>
-
-      <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>Также я очень люблю животных</span>
-          </div>
-          <video class="video" src="@/assets/video/wolfs.mp4" controls></video> 
-        </div>
+      <div class="quote__text right">
+        <span>Также я очень люблю животных</span>
+        <video class="video specialwidth" src="@/assets/video/wolfs.mp4" controls></video> 
       </div>
 
       <!-- Раздел 8 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 8
-          </span>
-        </div>
-      </div>
-
       <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>В мою честь пишут песни!</span>
-          </div>
-          <video class="video" src="@/assets/video/cosmeya.mp4" controls></video> 
-        </div>
+        <span>В мою честь пишут песни!</span>
+        <video class="video specialwidth" src="@/assets/video/cosmeya.mp4" controls></video>
       </div>
 
       <!-- Раздел 9 -->
-      <div class="section__name">
-        <div class="section__txt">
-          <span>
-            Раздел 9
-          </span>
-        </div>
-      </div>
-
-      <div class="quote__text">
-        <div class="quote__wrapper">
-          <div class="text-desc">
-            <span>И я даже хожу на концерты к своим модераторам!</span>
-          </div>
-          <video class="video" src="@/assets/video/osc.mp4" controls></video> 
-        </div>
+      <div class="quote__text right">
+        <span>И я даже хожу на концерты к своим модераторам!</span>
+        <video class="video specialwidth" src="@/assets/video/osc.mp4" controls></video> 
       </div>
       
     </div>
@@ -361,7 +249,7 @@ export default {
     
 
     .home__quote-wrapper {
-      width: 100%;
+      width: 50%;
       color: white;
       margin: auto;
 
@@ -375,10 +263,10 @@ export default {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 120px;
+        margin-top: 130px;
         background-color: rgba(0, 0, 0, 0.5);
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 12px;
         .section__txt {
           padding: 10px;
           span {
@@ -401,9 +289,24 @@ export default {
       }
 
       .quote__text {
-        margin-top: 0px;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5); 
+
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 20px;
+        color: white;
+        font-size: 18px;
+        span {
+          border-radius: 5px 15px;
+          // box-shadow: 0px 0px 12px;
+          
+          padding: 5px 15px;
+          background-color: rgba(0, 0, 0, 0.5);
+          // border-top: 1px solid white;
+          // border-bottom: 1px solid white
+          margin-top: 0px;
+          font-size: 20px;
+        }
         .quote__wrapper {
           margin: auto;
           width: 75%;
@@ -419,12 +322,15 @@ export default {
               padding: 10px;
             }
           }
-        }
 
+        }
+      }
+      .right {
+        align-items: end;
       }
 
       @media (max-width: 768px) {
-        width: 100%;
+        width: 90%;
       }
       @media (max-width: 475px) {
         .video {
@@ -476,7 +382,7 @@ export default {
             justify-content: space-between;
             margin-top: 15px;
             width: 100%;
-            background: rgba(31, 46, 58, 0.65);
+            background-color: rgba(0, 0, 0, 0.5);
             border-radius: 20px;
             padding-top: 5px;
             padding-bottom: 5px;
