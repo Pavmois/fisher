@@ -1,6 +1,7 @@
 <template>
     <Slide class="menu">
       <router-link to="/"><span>Главная</span></router-link>
+      <router-link to="/event"><span>Интерактив</span></router-link>
       <router-link to="/donate"><span>Поддержка</span></router-link>
       <router-link to="/history"><span>История</span></router-link>
       <router-link to="/clips"><span>Клипы</span></router-link>

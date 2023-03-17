@@ -322,7 +322,8 @@ export default {
           margin-bottom: 20px;
 
           .donate__sounds-description {
-            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: 22px;
             box-shadow: 0px 0px 12px;
             border-radius: 15px;
             width: 60%;
@@ -360,7 +361,7 @@ export default {
                 justify-content: space-between;
                 margin-top: 15px;
                 width: 100%;
-                background: rgba(31, 46, 58, 0.65);
+                background-color: rgba(0, 0, 0, 0.5);
                 border-radius: 20px;
                 padding-top: 5px;
                 padding-bottom: 5px;

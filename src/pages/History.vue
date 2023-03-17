@@ -466,8 +466,9 @@ export default {
         position: relative;
         flex-direction: column;
         color: white;
-        font-size: 18px;
+        font-size: 22px;
         box-shadow: 0px 0px 12px;
+        background-color: rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         width: 60%;
         margin: auto;

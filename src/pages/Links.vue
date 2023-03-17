@@ -51,11 +51,12 @@ export default {
         margin-top: 50px;
         color: white;
         .links_desc {
-            font-size: 18px;
+            font-size: 22px;
             color: white;
             margin: auto;
             box-shadow: 0px 0px 12px;
             border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
             width: 60%;
             padding: 10px;
             @media (max-width: 768px) {

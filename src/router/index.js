@@ -28,6 +28,10 @@ const routes = [
   {
     path: '/clips',
     component: () => import('../pages/Clips.vue')
+  },
+  {
+    path: '/event',
+    component: () => import('../pages/Event.vue')
   }
 ]
 
