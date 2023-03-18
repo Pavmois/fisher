@@ -106,21 +106,19 @@ export default {
             overflow: auto;
         }
         .npc {
-            background: #c9b81d;
-            color: black;
+            background: #476dd6;
         }
         .baff {
-            background: #0f7779;
+            background: #59a83d;
         }
         .debaff {
-            background: #ac1c1c;
+            background:  #bd2020;
         }
         .special {
-            background: #fffacd;
-            color: black;
+            background: #22229c;
         }
         .trigger {
-            background: #bb4123;
+            background: #943291;
         }
 
      } 
