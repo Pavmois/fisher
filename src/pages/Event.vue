@@ -19,7 +19,13 @@
                         <span class="special">Особый эффект</span>
                         <span class="trigger">Trigger</span>
                     </div>
-                </div>                 
+                </div> 
+                <div class="desc-link">
+                    <span>Задонатить можно тут:</span>
+                    <a class="wrap" href="https://www.donationalerts.com/r/davidfish" target="_blank">
+                    <button class="button">DonationAlerts</button>
+                </a>
+                </div>           
             </div>
             <!-- Таблица значений  -->
             <div class="event_table">
@@ -94,11 +100,78 @@ export default {
                     }
                 }
             }
+            .desc-link {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+                margin-top: 15px;
+                .wrap {
+                    margin-top: 15px;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    @media (max-width: 768px) {
+                        justify-content: center;
+                    }
+                }
+
+                .button {
+                    font-size: 38px;
+                    letter-spacing: 2px;
+                    color: white;
+                    background: #f87a26;
+                    border: none;
+                    transition: all 0.3s ease-in-out 0s;
+                    cursor: pointer;
+                    outline: none;
+                    position: relative;
+                    padding: 10px;
+                    @media (max-width: 768px) {
+                        font-size: 32px;
+                    }
+                    @media (max-width: 500px) {
+                        font-size: 22px;
+                    }
+                    }
+            }
             @media (max-width: 768px) {
               width: 90%;
             }
             @media (max-width: 500px) {
               font-size: 18px;
+            }
+        }
+        .event_btn {
+            width: 60%;
+            margin: auto;
+            .wrap {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+          }
+
+          .button {
+                font-family: Scary;
+                font-size: 38px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: white;
+                background: #f87a26;
+                border: none;
+                box-shadow: 12px 12px 24px rgba(255, 255, 255, 0.64);
+                transition: all 0.3s ease-in-out 0s;
+                cursor: pointer;
+                outline: none;
+                position: relative;
+                padding: 10px;
+                @media (max-width: 768px) {
+                font-size: 32px;
+                }
             }
         }
         .event_table {
