@@ -71,7 +71,7 @@
             <!-- Особые события -->
             <tr class="special">
                 <td>44</td>
-                <td>Ускоряет героя</td>
+                <td>Магия света</td>
             </tr>
             <tr class="special">
                 <td>93</td>
