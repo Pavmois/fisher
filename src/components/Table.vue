@@ -136,6 +136,10 @@
                 <td>Призывает кротокрыса</td>
             </tr>
             <tr class="trigger">
+                <td>65</td>
+                <td>Призывает гоблина</td>
+            </tr>
+            <tr class="trigger">
                 <td>68</td>
                 <td>Призывает падальщика</td>
             </tr>
@@ -230,6 +234,10 @@
             <tr class="trigger">
                 <td>1666</td>
                 <td>Призывает Лорда Демонов</td>
+            </tr>
+            <tr class="trigger">
+                <td>1888</td>
+                <td>Призывает Королеву Ползунов</td>
             </tr>
             <tr class="trigger">
                 <td>2000</td>
